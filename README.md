@@ -9,12 +9,11 @@ LLM-powered document retrieval, computer vision tools.
 **Languages:** Python · Java · SQL · C++  
 **Tools:** AWS Textract · Azure DevOps · OpenCV · Power BI · Kibana  
 
-## 🏗️ Featured Projects
-| Project | Description | Stack |
+| Project | What it does | Stack |
 |---|---|---|
-| [Chat with Documents (CBRE)](https://linkedin.com/in/lakshay-atreja) | Production RAG system processing 1,000+ valuation docs | LangChain · FAISS · AWS Textract |
-| [Fluid Dynamics Analyser](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) | Real-time spillway video analysis with depth mapping | OpenCV · PyQt5 |
-| [CIFAR-10 CNN](https://github.com/LAKSHAY-ATREJA/CIFAR-10) | Multi-class image classifier with data augmentation | TensorFlow · Keras |
+| [Fluid Dynamics Analyser](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) | Real-time spillway video analysis with depth mapping & contour plots | OpenCV · PyQt5 |
+| [CIFAR-10 CNN](https://github.com/LAKSHAY-ATREJA/CIFAR-10) | Multi-class image classifier with augmentation & hyperparameter tuning | TensorFlow · Keras |
+| [Titanic Survival Prediction](https://github.com/LAKSHAY-ATREJA/Titanic-Survival-Prediction) | Benchmarked 4 classifiers, achieved 86.6% accuracy with k-fold CV | Scikit-learn · Pandas |
 
 ## 📫 Reach me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-lakshay--atreja-blue)](https://linkedin.com/in/lakshay-atreja)
