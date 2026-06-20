@@ -1,62 +1,43 @@
 # Lakshay Atreja
 
-Final-year Software Engineering (Honours) student at the University of Queensland, graduating July 2026. Based in Brisbane.
-
-Most of my work sits at the intersection of applied AI and backend engineering — building things that actually run in production rather than stopping at a notebook. I'm particularly interested in retrieval-augmented generation, multi-agent systems, and machine learning pipelines that go beyond toy datasets.
+I'm an AI/ML developer based in Scotland, focused on building intelligent systems using Python and modern ML frameworks. My work spans retrieval-augmented generation, large language models, and computer vision applications.
 
 ---
 
-## Technical Focus
+## Skills
 
-**AI / ML:** RAG pipelines, LLM orchestration, multi-agent frameworks, LSTM networks, CNNs, classical ML  
-**Languages:** Python, Java, SQL, C++  
-**Libraries and Tools:** PyTorch, TensorFlow, LangChain, FAISS, OpenCV, scikit-learn, Flask  
-**Infrastructure:** AWS Textract, Azure DevOps, REST APIs
+Python, JavaScript, LangChain, RAG, deep learning, computer vision, REST APIs, Docker, TensorFlow, Keras, scikit-learn, Streamlit, FastAPI, FAISS
 
 ---
 
 ## Projects
 
-**[RAG-Eval-Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit)**  
-Evaluation toolkit for RAG pipelines. Provides a structured way to benchmark retrieval quality and generation faithfulness across different configurations.
+[Titanic Survival Prediction](https://github.com/LAKSHAY-ATREJA/Titanic-Survival-Prediction) - classification project using Random Forest, SVM and Logistic Regression
 
-**[Multi-Agent Research System](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system)**  
-Autonomous agent framework that decomposes research queries, runs parallel searches, and synthesises structured reports. Built with LangChain.
+[RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit) - lightweight toolkit for evaluating retrieval quality with IR metrics
 
-**[Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/document-intelligence-platform)**  
-LLM-powered document Q&A system with intelligent extraction. Designed for querying large document collections in natural language.
+[Multi-Agent Research System](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system) - five specialised agents that collaborate to produce research reports
 
-**[RAG Pipeline for Document Search](https://github.com/LAKSHAY-ATREJA/Rag-pipeline-for-Document-search-)**  
-End-to-end retrieval-augmented generation pipeline using FAISS for semantic search across document corpora.
+[Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) - computer vision app for fluid dynamics using OpenCV and PyQt5
 
-**[AI Code Reviewer](https://github.com/LAKSHAY-ATREJA/ai-code-reviewer)**  
-Automated code review tool that uses an LLM backend to surface quality issues, potential bugs, and improvement suggestions from diffs.
+[CIFAR-10 Image Classification](https://github.com/LAKSHAY-ATREJA/CIFAR-10) - CNN trained on CIFAR-10 with TensorFlow and Keras
 
-**[AI Chat Assistant](https://github.com/LAKSHAY-ATREJA/AI-chat-Assistant)**  
-Conversational AI assistant with context management, built to explore practical patterns in LLM-based dialogue systems.
+[DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api) - REST API for job application tracking with Express, MongoDB and JWT
 
-**[Real-Time News Sentiment Analyser](https://github.com/LAKSHAY-ATREJA/Real-Time-News-Sentiment-Analyser)**  
-Ingests live news feeds and runs sentiment classification across articles and headlines in near real time.
+[Real-Time News Sentiment Analyser](https://github.com/LAKSHAY-ATREJA/Real-Time-News-Sentiment-Analyser) - sentiment analysis on live news headlines using a custom financial lexicon
 
-**[StockSight — LSTM Stock Price Predictor](https://github.com/LAKSHAY-ATREJA/StockSight-LSTM-Stock-Price-Predictor)**  
-7-day stock price forecasting using LSTM networks with RSI indicators and a live dashboard built on Flask and Chart.js.
+[StockSight LSTM Predictor](https://github.com/LAKSHAY-ATREJA/StockSight-LSTM-Stock-Price-Predictor) - LSTM network for stock price prediction with interactive charts
 
-**[Fluid Dynamics Video Analysis Application](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application)**  
-Computer vision tool for analysing spillway footage. Generates depth maps, contour plots, and flow metrics from video input using OpenCV and PyQt5.
+[AI Chat Assistant](https://github.com/LAKSHAY-ATREJA/AI-chat-Assistant) - multi-turn conversational assistant with memory and context management
 
-**[CIFAR-10 Image Classifier](https://github.com/LAKSHAY-ATREJA/CIFAR-10)**  
-CNN trained on CIFAR-10 with data augmentation and hyperparameter tuning. Built to understand the practical levers of deep learning classification performance.
+[AI Code Reviewer](https://github.com/LAKSHAY-ATREJA/ai-code-reviewer) - automated code review for bugs and security issues with test generation
 
-**[DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api)**  
-REST API for tracking developer activity and project metrics. Focused on clean API design and structured data modelling.
+[Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/document-intelligence-platform) - multi-document Q&A with entity extraction and comparison
 
-**[Titanic Survival Prediction](https://github.com/LAKSHAY-ATREJA/Titanic-Survival-Prediction)**  
-Benchmarked four classifiers on the Titanic dataset with k-fold cross-validation. Achieved 86.6% accuracy. A thorough exercise in feature engineering and model selection.
+[RAG Pipeline for Document Search](https://github.com/LAKSHAY-ATREJA/Rag-pipeline-for-Document-search-) - semantic search pipeline using vector embeddings
 
 ---
 
 ## Contact
 
-[LinkedIn](https://linkedin.com/in/lakshayatreja) — lakshayatreja@gmail.com
-
-Open to graduate roles in software engineering and applied AI.
+GitHub: https://github.com/LAKSHAY-ATREJA
