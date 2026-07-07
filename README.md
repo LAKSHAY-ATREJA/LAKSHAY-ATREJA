@@ -1,45 +1,45 @@
 # Lakshay Atreja
 
-I'm an AI/ML developer based in Scotland, focused on building intelligent systems using Python and modern ML frameworks. My work spans retrieval-augmented generation, large language models, and computer vision applications.
+Software Engineering (Honours) student at The University of Queensland, based in Brisbane, Australia. I build backend systems, cloud applications, production software, and applied AI solutions using Python, JavaScript, AWS, and Docker.
 
----
+My experience spans REST APIs, document processing pipelines, production debugging, retrieval systems, machine learning, and computer vision.
 
 ## Skills
 
-Python, JavaScript, LangChain, RAG, deep learning, computer vision, REST APIs, Docker, TensorFlow, Keras, scikit-learn, Streamlit, FastAPI, FAISS
-
----
+Python, JavaScript, SQL, C++, REST APIs, Flask, FastAPI, Node.js, Docker, AWS, Git, MongoDB, LangChain, RAG, FAISS, TensorFlow, Keras, scikit-learn, OpenCV
 
 ## Projects
 
-[Titanic Survival Prediction](https://github.com/LAKSHAY-ATREJA/Titanic-Survival-Prediction) - benchmarked 4 classifiers achieving 86.6 percent accuracy with k-fold cross validation
+**DevTrack API** — REST API for tracking job applications with JWT authentication, MongoDB, Docker, and automated testing.
 
-[RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit) - dependency-light toolkit for evaluating RAG retrieval quality with standard IR metrics
+**Document Intelligence Platform** — Multi-document application for document ingestion, entity extraction, semantic retrieval, comparison, and question answering.
 
-[Multi-Agent Research System](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system) - five specialised AI agents that collaborate sequentially to produce research reports
+**RAG Eval Kit** — Dependency-light Python toolkit for evaluating retrieval quality using standard information retrieval metrics.
 
-[Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) - computer vision application for fluid dynamics analysis using OpenCV and PyQt5
+**StockSight LSTM Predictor** — Flask application integrating an LSTM forecasting pipeline, external market data, caching, retry logic, and interactive visualisation.
 
-[CIFAR-10 Image Classification](https://github.com/LAKSHAY-ATREJA/CIFAR-10) - CNN trained on CIFAR-10 with TensorFlow and Keras
+**Fluid Dynamics Video Analysis** — Computer vision desktop application for fluid dynamics analysis using OpenCV and PyQt5.
 
-[DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api) - REST API for tracking job applications with JWT auth, Docker, and full test coverage
+**Multi-Agent Research System** — Five specialised AI agents that collaborate sequentially across research, synthesis, and report generation.
 
-[Real-Time News Sentiment Analyser](https://github.com/LAKSHAY-ATREJA/Real-Time-News-Sentiment-Analyser) - fetches news headlines and runs sentiment analysis using a custom financial lexicon
+**Titanic Survival Prediction** — Benchmarked four machine learning classifiers using k-fold cross-validation, achieving 86.6% accuracy.
 
-[StockSight LSTM Predictor](https://github.com/LAKSHAY-ATREJA/-StockSight-LSTM-Stock-Price-Predictor) - LSTM neural network for stock price prediction with interactive visualisation
+**Real-Time News Sentiment Analyser** — Fetches live news headlines and performs sentiment analysis using a custom financial lexicon.
 
-[AI Chat Assistant](https://github.com/LAKSHAY-ATREJA/AI-chat-Assistant) - conversational AI assistant with memory and multi-turn dialogue
+**AI Code Reviewer** — Analyses source code for bugs and security issues and generates automated pytest test cases.
 
-[AI Code Reviewer](https://github.com/LAKSHAY-ATREJA/ai-code-reviewer) - detects bugs, security issues and generates pytest tests automatically
+**RAG Pipeline for Document Search** — Semantic document search pipeline using vector embeddings and retrieval-augmented generation.
 
-[Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/document-intelligence-platform) - upload documents, extract entities and ask questions across your document library
+**CIFAR-10 Image Classification** — Convolutional neural network trained on CIFAR-10 using TensorFlow and Keras.
 
-[RAG Pipeline for Document Search](https://github.com/LAKSHAY-ATREJA/Rag-pipeline-for-Document-search-) - RAG pipeline for semantic document search using vector embeddings
+**AI Chat Assistant** — Conversational AI application supporting memory and multi-turn dialogue.
 
----
+## Experience Highlight
+
+At CBRE Digital & Technology, I worked on a production document intelligence pipeline that reduced processing time from over four hours to under 15 minutes across more than 1,000 valuation documents.
 
 ## Contact
 
-GitHub: https://github.com/LAKSHAY-ATREJA
+**GitHub:** https://github.com/LAKSHAY-ATREJA
 
-LinkedIn: linkedin.com/in/lakshay-atreja
+**LinkedIn:** linkedin.com/in/lakshay-atreja
