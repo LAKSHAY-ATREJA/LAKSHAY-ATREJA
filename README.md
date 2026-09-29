@@ -1,45 +1,52 @@
 # Lakshay Atreja
 
-Software Engineering (Honours) student at The University of Queensland, based in Brisbane, Australia. I build backend systems, cloud applications, production software, and applied AI solutions using Python, JavaScript, AWS, and Docker.
+Software Engineering (Honours) graduate from The University of Queensland, based in Brisbane, Australia.
 
-My experience spans REST APIs, document processing pipelines, production debugging, retrieval systems, machine learning, and computer vision.
+I build backend systems, cloud infrastructure, distributed applications, and applied AI products. My recent work focuses on production-oriented APIs, retrieval systems, observability, document intelligence, containerised services, and reliable deployment workflows.
 
-## Skills
+## Core Stack
 
-Python, JavaScript, SQL, C++, REST APIs, Flask, FastAPI, Node.js, Docker, AWS, Git, MongoDB, LangChain, RAG, FAISS, TensorFlow, Keras, scikit-learn, OpenCV
+**Languages:** Python, JavaScript/Node.js, SQL, C++, Haskell  
+**Backend:** FastAPI, Flask, Express, REST APIs, SQLAlchemy, MongoDB, PostgreSQL  
+**Cloud & DevOps:** AWS, Docker, GitHub Actions, CI/CD  
+**AI / ML:** RAG, LangChain, FAISS, TensorFlow, scikit-learn, OpenCV  
+**Engineering:** Testing, API security, observability, retrieval evaluation, asynchronous services
 
-## Projects
+## Selected Projects
 
-[**DevTrack API**](https://github.com/LAKSHAY-ATREJA/devtrack-api) — REST API for tracking job applications with JWT authentication, MongoDB, Docker, and automated testing.
+### [SignalOps — Cloud Service Health & Incident Detection API](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API)
+Production-style FastAPI service for telemetry ingestion, rolling baselines, automated anomaly detection, severity-classified incidents, PostgreSQL persistence, Docker and CI.
 
-[**Document Intelligence Platform**](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform) — Multi-document application for document ingestion, entity extraction, semantic retrieval, comparison, and question answering.
+### [DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api)
+Secure Node.js/Express backend with JWT authentication, ownership isolation, MongoDB, pagination, aggregation, rate limiting, request tracing, automated tests, Docker and CI.
 
-[**RAG Eval Kit**](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit) — Dependency-light Python toolkit for evaluating retrieval quality using standard information retrieval metrics.
+### [RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit)
+Dependency-light Python toolkit for measuring retrieval quality with Precision@k, Recall@k, F1, MRR, MAP and nDCG. Includes CLI tooling, automated tests and a CI quality gate for retrieval regressions.
 
-[**StockSight LSTM Predictor**](https://github.com/LAKSHAY-ATREJA/StockSight-LSTM-Stock-Price-Predictor) — Flask application integrating an LSTM forecasting pipeline, external market data, caching, retry logic, and interactive visualisation.
+### [Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform)
+Multi-document AI system for PDF ingestion, semantic retrieval, entity extraction, cross-document comparison and source-grounded Q&A using FAISS, LangChain and LLM inference. Includes containerised deployment.
 
-[**Fluid Dynamics Video Analysis**](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) — Computer vision desktop application for fluid dynamics analysis using OpenCV and PyQt5.
+### [Multi-Agent Research System](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system)
+Five-agent research pipeline covering planning, research, analysis, synthesis and quality review, with a Streamlit interface, deployment configuration and Docker support.
 
-[**Multi-Agent Research System**](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system) — Five specialised AI agents that collaborate sequentially across research, synthesis, and report generation.
+### [Fluid Dynamics Video Analysis Application](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application)
+Computer-vision desktop application using OpenCV and PyQt5 for video-based fluid-dynamics analysis and visualisation.
 
-[**Titanic Survival Prediction**](https://github.com/LAKSHAY-ATREJA/Titanic-Survival-Prediction) — Benchmarked machine learning classifiers using k-fold cross-validation for passenger survival prediction.
+## Engineering Experience
 
-[**Real-Time News Sentiment Analyser**](https://github.com/LAKSHAY-ATREJA/Real-Time-News-Sentiment-Analyser) — Fetches live news headlines and performs sentiment analysis using a custom financial lexicon.
+At **CBRE Digital & Technology**, I worked on a production document-intelligence pipeline that reduced processing time from more than four hours to under 15 minutes across 1,000+ valuation documents.
 
-[**AI Code Reviewer**](https://github.com/LAKSHAY-ATREJA/ai-code-reviewer) — Analyses source code for bugs and security issues and generates automated pytest test cases.
+My honours research explored **Gaussian Splatting, generative image completion and provenance visualisation**, combining computer vision, 3D reconstruction and applied generative AI.
 
-[**RAG Pipeline for Document Search**](https://github.com/LAKSHAY-ATREJA/Rag-pipeline-for-Document-search-) — Semantic document search pipeline using vector embeddings and retrieval-augmented generation.
+## What I am building around
 
-[**CIFAR-10 Image Classification**](https://github.com/LAKSHAY-ATREJA/CIFAR-10) — Convolutional neural network trained on CIFAR-10 using TensorFlow and Keras.
-
-[**AI Chat Assistant**](https://github.com/LAKSHAY-ATREJA/AI-chat-Assistant) — Conversational AI application supporting memory, context management, and multi-turn dialogue.
-
-## Experience Highlight
-
-At CBRE Digital & Technology, I worked on a production document intelligence pipeline that reduced processing time from over four hours to under 15 minutes across more than 1,000 valuation documents.
+- Backend and API engineering
+- Cloud-native and containerised services
+- Distributed/event-driven systems
+- Applied AI / RAG systems with measurable evaluation
+- Observability, reliability and production tooling
 
 ## Contact
 
-**GitHub:** https://github.com/LAKSHAY-ATREJA
-
-**LinkedIn:** linkedin.com/in/lakshay-atreja
+**GitHub:** [github.com/LAKSHAY-ATREJA](https://github.com/LAKSHAY-ATREJA)  
+**LinkedIn:** [linkedin.com/in/lakshay-atreja](https://linkedin.com/in/lakshay-atreja)
