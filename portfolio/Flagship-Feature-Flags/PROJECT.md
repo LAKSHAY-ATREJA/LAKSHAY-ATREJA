@@ -1,0 +1,1 @@
+Flagship is a feature flag service portfolio project. It demonstrates deterministic rollouts, API design, automated testing, and container deployment.
