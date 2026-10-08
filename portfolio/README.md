@@ -15,6 +15,6 @@ Each release includes source, setup instructions, a runnable local demonstration
 | SearchGrid | Queued for validation and release |
 | SLOForge | Queued for validation and release |
 
-LedgerFlow is an in-memory educational reference. Its README explains the scope and provides both an automated demo and an interactive API. Docker configuration is supplied but was not executed during local validation. GitHub CI configuration is included; this page does not claim a completed hosted CI run.
+LedgerFlow is an in-memory educational reference. Its README explains the scope and provides both an automated demo and an interactive API. Docker configuration is supplied but was not executed during local validation. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37728175826) for the published implementation on Python 3.11 and 3.12.
 
 The remaining entries are a release queue, not claims of completed publication. Existing partial folders remain visible until their complete replacements pass their release checks.

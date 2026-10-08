@@ -15,7 +15,12 @@
         "ruff_check": "passed",
         "ruff_format": "passed"
       },
-      "hosted_ci": "configured; result not yet verified",
+      "hosted_ci": {
+        "status": "success",
+        "run_id": 37728175826,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37728175826",
+        "checked_on": "2026-10-08"
+      },
       "file_sha256": {
         "portfolio/LedgerFlow/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
         "portfolio/LedgerFlow/.gitignore": "06089856c3ef1b5f670805f46e90ed5cf389ce1fe80a202f43ab923607604597",
@@ -34,7 +39,8 @@
         "portfolio/LedgerFlow/pyproject.toml": "a59274300809128e4982924bb7accedfbfd564e5e6d6a5f268582d9647b40329",
         "portfolio/LedgerFlow/tests/test_api.py": "da8d6a95517240cbf57bffa80896a0c0d8058e2bd868dfd5c5578cfba34baec7",
         "portfolio/LedgerFlow/tests/test_ledger.py": "81dea34aa46974fe0781aeb6b7209e5d61246886febcd2bc7fa7db784d5fdc2b"
-      }
+      },
+      "publication_commit": "d92086574885143355c0460f9091629928931952"
     },
     {
       "name": "Flagship-Feature-Flags",
