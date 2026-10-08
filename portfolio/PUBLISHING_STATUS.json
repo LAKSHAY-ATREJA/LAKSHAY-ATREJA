@@ -55,7 +55,12 @@
         "server_build": "passed",
         "http_demo": "passed: targeting, deterministic rollout and kill switch"
       },
-      "hosted_ci": "configured; result pending",
+      "hosted_ci": {
+        "status": "success",
+        "run_id": 37731672897,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37731672897",
+        "checked_on": "2026-10-08"
+      },
       "file_sha256": {
         "portfolio/Flagship-Feature-Flags/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
         "portfolio/Flagship-Feature-Flags/.gitignore": "9a03dac2a531461a5b93973fc0f09f9fbc716c936f34514c577e25c0a12f7d23",
@@ -73,7 +78,8 @@
         "portfolio/Flagship-Feature-Flags/internal/api/handler_test.go": "f26b28840e76e1e74f6d0fcdc567ab8504a3dbde6cde11e64d50501e95095974",
         "portfolio/Flagship-Feature-Flags/internal/flags/engine.go": "5df61d95f134ad40cb40604f1c17fcfaf095d705778236d506c5220a51383baf",
         "portfolio/Flagship-Feature-Flags/internal/flags/engine_test.go": "9a583ae7ece0a8d5cb1e75936f602a7a79436e1975a59a52239a80c0e243dfd2"
-      }
+      },
+      "publication_commit": "c1219be169fc2027a094235bb2ddecb00310e82a"
     },
     {
       "name": "OrderMesh",

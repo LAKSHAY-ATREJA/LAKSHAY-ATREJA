@@ -17,6 +17,6 @@ Each release includes source, setup instructions, a runnable local demonstration
 
 LedgerFlow is an in-memory educational reference. Its README explains the scope and provides both an automated demo and an interactive API. Docker configuration is supplied but was not executed during local validation. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37728175826) for the published implementation on Python 3.11 and 3.12.
 
-Flagship Feature Flags is a concurrency-safe, in-memory Go reference service. Its local checks covered race detection, vet, server compilation and live HTTP behaviour for targeting, stable rollout and kill-switch decisions. It has no authentication or persistent/distributed state, and no hosted service or production-scale claim is made. GitHub CI is configured; this page does not claim a completed hosted run until its result is observed.
+Flagship Feature Flags is a concurrency-safe, in-memory Go reference service. Its local checks covered race detection, vet, server compilation and live HTTP behaviour for targeting, stable rollout and kill-switch decisions. It has no authentication or persistent/distributed state, and no hosted service or production-scale claim is made. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37731672897) for the published implementation.
 
 The remaining entries are a release queue, not claims of completed publication. Existing partial folders remain visible until their complete replacements pass their release checks.
