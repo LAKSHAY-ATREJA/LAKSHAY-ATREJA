@@ -12,6 +12,12 @@ I build backend systems, cloud infrastructure, distributed applications, and app
 **AI / ML:** RAG, LangChain, FAISS, TensorFlow, scikit-learn, OpenCV  
 **Engineering:** Testing, API security, observability, retrieval evaluation, asynchronous services
 
+## Runnable portfolio
+
+[LedgerFlow](portfolio/LedgerFlow) — a double-entry ledger API with an automated HTTP demo, retry/concurrency tests and explicit implementation limits.
+
+[View the project release queue](portfolio/README.md).
+
 ## Selected Projects
 
 ### [SignalOps — Cloud Service Health & Incident Detection API](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API)
