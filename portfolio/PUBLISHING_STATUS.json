@@ -44,8 +44,36 @@
     },
     {
       "name": "Flagship-Feature-Flags",
-      "status": "pending",
-      "path": "portfolio/Flagship-Feature-Flags"
+      "status": "published",
+      "path": "portfolio/Flagship-Feature-Flags",
+      "published_on": "2026-10-08",
+      "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
+      "local_checks": {
+        "test_cases": 6,
+        "race_tests": "passed",
+        "go_vet": "passed",
+        "server_build": "passed",
+        "http_demo": "passed: targeting, deterministic rollout and kill switch"
+      },
+      "hosted_ci": "configured; result pending",
+      "file_sha256": {
+        "portfolio/Flagship-Feature-Flags/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
+        "portfolio/Flagship-Feature-Flags/.gitignore": "9a03dac2a531461a5b93973fc0f09f9fbc716c936f34514c577e25c0a12f7d23",
+        "portfolio/Flagship-Feature-Flags/CHANGELOG.md": "b7c3a6ab4a98fca3cbec4a57143ba155fc5fd7412faa84a8898b44c4c4a8e725",
+        "portfolio/Flagship-Feature-Flags/CONTRIBUTING.md": "d41b7edbee0e5147c59537702acf2115687c333adb53c57cdb0bbaf4a725e4ac",
+        "portfolio/Flagship-Feature-Flags/Dockerfile": "9b92ab93af516086082d3ef4e6d148ac623eb9706fa1101a04e74eba2f61ae3c",
+        "portfolio/Flagship-Feature-Flags/GITHUB_METADATA.md": "efe7f074c18b8e39106eaf0345e4ce207f4f536ae8595de9fd9bc8602dc252a9",
+        "portfolio/Flagship-Feature-Flags/LICENSE": "9cfa406d103afff6b45bcf7d740e4fc2f13b34843c06c1b2c575b4b45a73fc77",
+        "portfolio/Flagship-Feature-Flags/README.md": "eeeaf27cf5f862a852f63f8e33bce71f530a7dba8308bdc3491749c65207aafb",
+        "portfolio/Flagship-Feature-Flags/SECURITY.md": "af7eb9c492662fa7cb99f97b88185f0753dd8e248466f67de95cd7a601ae65e9",
+        "portfolio/Flagship-Feature-Flags/cmd/server/main.go": "36db1f20c581326f969633326b1e817324fa278056df048211419d9f76a2f2a9",
+        "portfolio/Flagship-Feature-Flags/demo.sh": "03340a30a694dc62f5cd63e8de28aae1b03e095cfeeebdb54788a5b77ae03288",
+        "portfolio/Flagship-Feature-Flags/go.mod": "6ad576e88d27535aa0ccf902dd9fb4e81ee1e98f5b1b20c9e648ee2c1145fa30",
+        "portfolio/Flagship-Feature-Flags/internal/api/handler.go": "b7d99d5ffe5f7cad236653b620d541b391e178fccfbb9c455c469ab9034be660",
+        "portfolio/Flagship-Feature-Flags/internal/api/handler_test.go": "f26b28840e76e1e74f6d0fcdc567ab8504a3dbde6cde11e64d50501e95095974",
+        "portfolio/Flagship-Feature-Flags/internal/flags/engine.go": "5df61d95f134ad40cb40604f1c17fcfaf095d705778236d506c5220a51383baf",
+        "portfolio/Flagship-Feature-Flags/internal/flags/engine_test.go": "9a583ae7ece0a8d5cb1e75936f602a7a79436e1975a59a52239a80c0e243dfd2"
+      }
     },
     {
       "name": "OrderMesh",
