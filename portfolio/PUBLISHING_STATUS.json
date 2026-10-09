@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "LAKSHAY-ATREJA",
-  "updated_on": "2026-10-08",
+  "updated_on": "2026-10-09",
   "source_bundle_library_id": "libfile_341919f3e3188191bc509b6e979ef012",
   "queue": [
     {
@@ -83,8 +83,48 @@
     },
     {
       "name": "OrderMesh",
-      "status": "pending",
-      "path": "portfolio/OrderMesh"
+      "status": "published",
+      "path": "portfolio/OrderMesh",
+      "published_on": "2026-10-09",
+      "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
+      "local_checks": {
+        "test_cases": 4,
+        "test_evidence": "matching source passed Maven service and H2 API tests on 2026-10-02; fresh hosted rerun pending",
+        "http_demo": "passed on 2026-10-09 using the matching packaged jar: create, idempotent retry, lookup and conflicting retry",
+        "fresh_local_maven": "dependency download blocked by the execution network; not reported as passed",
+        "pom_parse": "passed",
+        "demo_shell_syntax": "passed"
+      },
+      "hosted_ci": "configured; result pending",
+      "file_sha256": {
+        "portfolio/OrderMesh/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
+        "portfolio/OrderMesh/.gitignore": "46344db5799b53d12e8853be96c6ede97cea02459544cb91eb71f62647170832",
+        "portfolio/OrderMesh/CHANGELOG.md": "7700abbe008f9f1072f2e1ed84bf5dc735ebdf4983200a907f0df35d0ffdb778",
+        "portfolio/OrderMesh/CONTRIBUTING.md": "d41b7edbee0e5147c59537702acf2115687c333adb53c57cdb0bbaf4a725e4ac",
+        "portfolio/OrderMesh/Dockerfile": "9b695f3080b584a9413efa9a17211d3ee42575a64a158913779dffbaf8639652",
+        "portfolio/OrderMesh/GITHUB_METADATA.md": "b7df6ef1656912639aed59224e9120cce8345560e05ca906d5353a46542c2997",
+        "portfolio/OrderMesh/LICENSE": "e613ff4fed09e6cab718f07481379eb77dbf85b8032e59f08e271abb535877af",
+        "portfolio/OrderMesh/README.md": "c3bd2a71009e8fa8d94b197c66267abe4ff806100c7abac652befd28d1b3e0c4",
+        "portfolio/OrderMesh/SECURITY.md": "af7eb9c492662fa7cb99f97b88185f0753dd8e248466f67de95cd7a601ae65e9",
+        "portfolio/OrderMesh/demo.sh": "2d047c00a4dbe8d825496f3344047eedc5d9aaa96fbb2be7e7eafaf48beb355e",
+        "portfolio/OrderMesh/docker-compose.yml": "245cc4012ab4073cecb0b289ae706cb624d7aa66dba10d1d39314d02bc7df46a",
+        "portfolio/OrderMesh/pom.xml": "4cd34bc6043951878613cfa4ff121f189eb7112c97dcad9fd73379c0b79d93e8",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/Errors.java": "2820b64822edf9810264dd93c77e52c3f18430e4474dbf7a2ba8b7f7f4eee7e6",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/Health.java": "73d1ff26b583addfbe29079cca5bc557017be425cbf83fb3e1bcecf0596e4766",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/Order.java": "071bbadd8e15079e6637ccb9b0d769d88a313a3ff3f70380085ac737b320ab62",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/OrderController.java": "88ec7e52a125341964f0f3052b478f26d1980bfe25ff9da40e52461b11069393",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/OrderMeshApplication.java": "daf6564ccad6fbcbd7d8d2cbcb85884dc2cd07ce1f6800c2c218e088f961addf",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/OrderRepository.java": "ce6aaa6274bca559932fb6dae75728d270944e328e67b634cea3e76b083af8a4",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/OrderService.java": "d89e5def5b68ade38703eaa709b10149db6f0b7b19603fe977660a32755d7b9a",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/OutboxEvent.java": "183b22989eeb3436394e057d8de043a8809140cde10fe44d21af3b41f7634e0f",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/OutboxPublisher.java": "9f74c33757f91cf158f5ff4e6ece6621f6638c0533676198f3995955d85fba38",
+        "portfolio/OrderMesh/src/main/java/com/lakshay/ordermesh/OutboxRepository.java": "374746029af1c9d0c5af5cf4a62cbcdce8a1b04f6a96c68f7b04f6a005c81f11",
+        "portfolio/OrderMesh/src/main/resources/application-demo.yml": "3ce9854aaefbc9826e646611cdb74e9c249e8e7a97dbc781d03b661c958d47d2",
+        "portfolio/OrderMesh/src/main/resources/application.yml": "756c3548470f763bd2a606ba31e3898fe5d103fc564381629a0503e0eadf3152",
+        "portfolio/OrderMesh/src/test/java/com/lakshay/ordermesh/OrderApiTest.java": "c3ca81340352363396e02cb5dd1df61831e9aa8c79092d8b6618e4b133a63781",
+        "portfolio/OrderMesh/src/test/java/com/lakshay/ordermesh/OrderServiceTest.java": "a0882a0b24fecda7f8fa1575d38e9fbb8ed85479d4e3ed09945a6d3ffb01baab",
+        "portfolio/OrderMesh/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker": "8eca853a5a457f17e0479b71dfbe95f2a13aff9eeff250261ecdc8ca9b847a6a"
+      }
     },
     {
       "name": "RAGGuard-AI-Platform",

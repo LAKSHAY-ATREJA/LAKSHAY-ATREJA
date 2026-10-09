@@ -1,0 +1,33 @@
+name: OrderMesh CI
+
+on:
+  push:
+    paths:
+      - "portfolio/OrderMesh/**"
+      - ".github/workflows/ordermesh.yml"
+  pull_request:
+    paths:
+      - "portfolio/OrderMesh/**"
+      - ".github/workflows/ordermesh.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio/OrderMesh
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+          cache-dependency-path: portfolio/OrderMesh/pom.xml
+      - name: Test and package
+        run: mvn -B verify
+      - name: End-to-end H2 demo
+        run: SKIP_BUILD=1 ./demo.sh
