@@ -89,13 +89,19 @@
       "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
       "local_checks": {
         "test_cases": 4,
-        "test_evidence": "matching source passed Maven service and H2 API tests on 2026-10-02; fresh hosted rerun pending",
+        "test_evidence": "matching source passed Maven service and H2 API tests on 2026-10-02; fresh hosted rerun passed on 2026-10-09",
         "http_demo": "passed on 2026-10-09 using the matching packaged jar: create, idempotent retry, lookup and conflicting retry",
         "fresh_local_maven": "dependency download blocked by the execution network; not reported as passed",
         "pom_parse": "passed",
         "demo_shell_syntax": "passed"
       },
-      "hosted_ci": "configured; result pending",
+      "hosted_ci": {
+        "status": "success",
+        "run_id": 37917478024,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37917478024",
+        "checked_on": "2026-10-09",
+        "checks": "Java 17 Maven verify and end-to-end H2 demo"
+      },
       "file_sha256": {
         "portfolio/OrderMesh/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
         "portfolio/OrderMesh/.gitignore": "46344db5799b53d12e8853be96c6ede97cea02459544cb91eb71f62647170832",
@@ -124,7 +130,8 @@
         "portfolio/OrderMesh/src/test/java/com/lakshay/ordermesh/OrderApiTest.java": "c3ca81340352363396e02cb5dd1df61831e9aa8c79092d8b6618e4b133a63781",
         "portfolio/OrderMesh/src/test/java/com/lakshay/ordermesh/OrderServiceTest.java": "a0882a0b24fecda7f8fa1575d38e9fbb8ed85479d4e3ed09945a6d3ffb01baab",
         "portfolio/OrderMesh/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker": "8eca853a5a457f17e0479b71dfbe95f2a13aff9eeff250261ecdc8ca9b847a6a"
-      }
+      },
+      "publication_commit": "0c9d42dcd96c2940ff0d40d83c6ad257f1814de0"
     },
     {
       "name": "RAGGuard-AI-Platform",
