@@ -149,8 +149,11 @@
         "http_demo": "passed: health, offline retrieval with full citation coverage, and prompt-injection rejection"
       },
       "hosted_ci": {
-        "status": "pending",
-        "checked_on": "2026-10-10"
+        "status": "success",
+        "run_id": 38044357761,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/38044357761",
+        "checked_on": "2026-10-10",
+        "checks": "Python 3.11 and 3.12 locked install, Ruff, 6 tests and credential-free HTTP demo"
       },
       "file_sha256": {
         "portfolio/RAGGuard-AI-Platform/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
@@ -175,7 +178,7 @@
         "portfolio/RAGGuard-AI-Platform/tests/test_api.py": "e947e19ab1798c98a2485105650fcdb6f0d5b9d36ba4de3fd09a28aebf340561",
         "portfolio/RAGGuard-AI-Platform/tests/test_ragguard.py": "2d9ebec08f7361c6b0a0b4ebadbcefc32b8ef896cc094a1f8d4898c098878a4a"
       },
-      "publication_commit": null
+      "publication_commit": "e5b15e03ee4c0947d0fbf528ad6b37c01958c314"
     },
     {
       "name": "SyncSpace",
