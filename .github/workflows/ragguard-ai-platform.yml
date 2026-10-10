@@ -1,0 +1,44 @@
+name: RAGGuard AI Platform
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "portfolio/RAGGuard-AI-Platform/**"
+      - ".github/workflows/ragguard-ai-platform.yml"
+  pull_request:
+    paths:
+      - "portfolio/RAGGuard-AI-Platform/**"
+      - ".github/workflows/ragguard-ai-platform.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio/RAGGuard-AI-Platform
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: portfolio/RAGGuard-AI-Platform/requirements-dev.lock
+      - name: Install locked dependencies
+        run: |
+          python -m pip install -r requirements-dev.lock
+          python -m pip install --no-deps -e .
+      - name: Lint and format check
+        run: |
+          ruff check .
+          ruff format --check .
+      - name: Tests
+        run: pytest -q
+      - name: Credential-free HTTP demo
+        run: python demo.py

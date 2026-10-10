@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "LAKSHAY-ATREJA",
-  "updated_on": "2026-10-09",
+  "updated_on": "2026-10-10",
   "source_bundle_library_id": "libfile_341919f3e3188191bc509b6e979ef012",
   "queue": [
     {
@@ -135,8 +135,47 @@
     },
     {
       "name": "RAGGuard-AI-Platform",
-      "status": "pending",
-      "path": "portfolio/RAGGuard-AI-Platform"
+      "status": "published",
+      "path": "portfolio/RAGGuard-AI-Platform",
+      "published_on": "2026-10-10",
+      "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
+      "local_checks": {
+        "test_cases": 6,
+        "pytest": "passed on Python 3.12",
+        "ruff_check": "passed",
+        "ruff_format": "passed",
+        "compileall": "passed",
+        "dependency_check": "passed",
+        "http_demo": "passed: health, offline retrieval with full citation coverage, and prompt-injection rejection"
+      },
+      "hosted_ci": {
+        "status": "pending",
+        "checked_on": "2026-10-10"
+      },
+      "file_sha256": {
+        "portfolio/RAGGuard-AI-Platform/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
+        "portfolio/RAGGuard-AI-Platform/.env.example": "65c07ade6cab619d606f47514c1e31cbb6b93b2d8501a118c1565d79ad3ee74d",
+        "portfolio/RAGGuard-AI-Platform/.gitignore": "46344db5799b53d12e8853be96c6ede97cea02459544cb91eb71f62647170832",
+        "portfolio/RAGGuard-AI-Platform/CHANGELOG.md": "7ecfe4b0713c26d85c1ddc11f98b7c0cf3484b262fa1142c5b537afed945f152",
+        "portfolio/RAGGuard-AI-Platform/CONTRIBUTING.md": "d41b7edbee0e5147c59537702acf2115687c333adb53c57cdb0bbaf4a725e4ac",
+        "portfolio/RAGGuard-AI-Platform/Dockerfile": "f80a30fa10f9511d37a8c0075aa5acff6d0cc361d56cecb59abfa195f96b9ac3",
+        "portfolio/RAGGuard-AI-Platform/GITHUB_METADATA.md": "2f9c413c83c28d4ea338416cea1b0cc42a43c12bbfc0f74eb8290aa15e1baf28",
+        "portfolio/RAGGuard-AI-Platform/LICENSE": "9cfa406d103afff6b45bcf7d740e4fc2f13b34843c06c1b2c575b4b45a73fc77",
+        "portfolio/RAGGuard-AI-Platform/README.md": "fb3078e44e566bc7e40d274549a11bd6d89328c08cb37d3a5c4918590547fab6",
+        "portfolio/RAGGuard-AI-Platform/SECURITY.md": "af7eb9c492662fa7cb99f97b88185f0753dd8e248466f67de95cd7a601ae65e9",
+        "portfolio/RAGGuard-AI-Platform/demo.py": "fe5b0f0e33ee7dbabf24ea99e2a0113f265f2350064a4dd54cc4b35ba0b5fda9",
+        "portfolio/RAGGuard-AI-Platform/pyproject.toml": "6ecede52e4ea0a1894a4c5522d4063e2500b71367838a40be60010351bbdc810",
+        "portfolio/RAGGuard-AI-Platform/ragguard/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "portfolio/RAGGuard-AI-Platform/ragguard/api.py": "d0b787f7421b33bd8c849df76cb103a86ae0ff54cc1902d478885e367034d3dc",
+        "portfolio/RAGGuard-AI-Platform/ragguard/eval.py": "9e13f0e0d6e88c30f682b9c3d3421a8bc2ee8b92bebaad259ddac80d3d13ab10",
+        "portfolio/RAGGuard-AI-Platform/ragguard/generator.py": "f7b781dd00a247a75fc8fb6017d82ad5a162b8a812c5bab4dcf13a3eedebd13f",
+        "portfolio/RAGGuard-AI-Platform/ragguard/guardrails.py": "463b62b8ef589d39379d7733326c6110f2c455a4628780d50a04b0f44d56c19f",
+        "portfolio/RAGGuard-AI-Platform/ragguard/retrieval.py": "ce9b96bfe81a9c5045d0d53d71a09a5b5167e83dc46e5bac9805d3ab32826889",
+        "portfolio/RAGGuard-AI-Platform/requirements-dev.lock": "92d287756385c689a3bd7afb99bed16f70f05b757167b0cde92c3fdffa145175",
+        "portfolio/RAGGuard-AI-Platform/tests/test_api.py": "e947e19ab1798c98a2485105650fcdb6f0d5b9d36ba4de3fd09a28aebf340561",
+        "portfolio/RAGGuard-AI-Platform/tests/test_ragguard.py": "2d9ebec08f7361c6b0a0b4ebadbcefc32b8ef896cc094a1f8d4898c098878a4a"
+      },
+      "publication_commit": null
     },
     {
       "name": "SyncSpace",
