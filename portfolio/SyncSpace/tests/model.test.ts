@@ -1,0 +1,2 @@
+import {describe,it,expect} from 'vitest'; import {apply} from '../shared/model.js';
+describe('versioned operations',()=>{it('rejects stale updates',()=>{const m=new Map(); apply(m,{type:'create',cardId:'1',baseVersion:0,title:'A'}); apply(m,{type:'rename',cardId:'1',baseVersion:1,title:'B'}); expect(()=>apply(m,{type:'move',cardId:'1',baseVersion:1,column:'done'})).toThrow('version conflict')})})

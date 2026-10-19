@@ -8,7 +8,7 @@ Each release includes source, setup instructions, a runnable local demonstration
 | [Flagship Feature Flags](Flagship-Feature-Flags) | Complete Go implementation released 8 October 2026; race tests, vet, build and real HTTP demo passed locally |
 | [OrderMesh](OrderMesh) | Complete Java/Spring implementation released 9 October 2026; credential-free live H2 demo passed |
 | [RAGGuard AI Platform](RAGGuard-AI-Platform) | Complete offline-first Python implementation released 10 October 2026; 6 tests and real HTTP demo passed locally |
-| SyncSpace | Queued for validation and release |
+| [SyncSpace](SyncSpace) | Complete TypeScript/React/WebSocket implementation released 19 October 2026; tests, production build, live demo and visual review passed locally |
 | StreamForge | Queued for validation and release |
 | PlatformKit | Queued; Terraform validation still needs resolution |
 | APISentinel | Queued for validation and release |
@@ -22,5 +22,7 @@ Flagship Feature Flags is a concurrency-safe, in-memory Go reference service. It
 OrderMesh demonstrates idempotent order writes and a transactional outbox. A live H2 HTTP demo passed locally using an exact-source packaged artifact. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37917478024) with a fresh Java 17 Maven build, four tests and the end-to-end H2 demo. PostgreSQL, Redpanda and Docker execution are not claimed.
 
 RAGGuard AI Platform is an offline-first RAG reference gateway. Six tests, Ruff checks, compilation and a real loopback HTTP demo passed locally; the demo covered health, deterministic evidence retrieval with citations and prompt-injection rejection. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/38044357761) on Python 3.11 and 3.12 with the locked environment and the same HTTP demo. Its corpus is small and in-memory, its hash-vector retrieval and guardrails are deliberately lightweight, and the optional external model-provider path was not exercised. No hosted service or cloud deployment is claimed.
+
+SyncSpace is an in-memory collaborative task-board reference app. Type checking, two focused tests, a production build and a real two-client WebSocket demo passed locally; desktop and mobile renders were inspected. It has no authentication, persistence or multi-node coordination, and no hosted service or Docker execution is claimed.
 
 The remaining entries are a release queue, not claims of completed publication. Existing partial folders remain visible until their complete replacements pass their release checks.

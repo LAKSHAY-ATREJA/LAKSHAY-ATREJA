@@ -1,0 +1,39 @@
+name: SyncSpace CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "portfolio/SyncSpace/**"
+      - ".github/workflows/syncspace.yml"
+  pull_request:
+    paths:
+      - "portfolio/SyncSpace/**"
+      - ".github/workflows/syncspace.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio/SyncSpace
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: portfolio/SyncSpace/package-lock.json
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Type check
+        run: npm run typecheck
+      - name: Tests
+        run: npm test
+      - name: Production build
+        run: npm run build
+      - name: Credential-free WebSocket demo
+        run: npm run demo

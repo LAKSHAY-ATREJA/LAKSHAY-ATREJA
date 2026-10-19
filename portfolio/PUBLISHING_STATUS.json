@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "LAKSHAY-ATREJA",
-  "updated_on": "2026-10-10",
+  "updated_on": "2026-10-19",
   "source_bundle_library_id": "libfile_341919f3e3188191bc509b6e979ef012",
   "queue": [
     {
@@ -182,8 +182,48 @@
     },
     {
       "name": "SyncSpace",
-      "status": "pending",
-      "path": "portfolio/SyncSpace"
+      "status": "published",
+      "path": "portfolio/SyncSpace",
+      "published_on": "2026-10-19",
+      "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
+      "local_checks": {
+        "test_cases": 2,
+        "typecheck": "passed",
+        "production_build": "passed",
+        "websocket_demo": "passed: two clients, create fan-out, move and stale-write rejection",
+        "visual_review": "desktop and mobile renders inspected"
+      },
+      "hosted_ci": {
+        "status": "pending",
+        "checked_on": "2026-10-19"
+      },
+      "file_sha256": {
+        "portfolio/SyncSpace/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
+        "portfolio/SyncSpace/.gitignore": "feb462c1f25dafba1dc2ada4ec7ed94570a3ba0b4e687bdff772c28c45b5ae91",
+        "portfolio/SyncSpace/CHANGELOG.md": "f8be2cd2205b101cf25029824e04ce744874736db9ae8f34bc475cf2d94d6a05",
+        "portfolio/SyncSpace/CONTRIBUTING.md": "d41b7edbee0e5147c59537702acf2115687c333adb53c57cdb0bbaf4a725e4ac",
+        "portfolio/SyncSpace/Dockerfile": "be826ca7c92713b550063c985dde8f4abcabf2c3b9467a642abb5dda03d6d1de",
+        "portfolio/SyncSpace/GITHUB_METADATA.md": "bb5bd25cf6d19722e642be3ff0f72912859832ae9068dddf00efbde26a835a96",
+        "portfolio/SyncSpace/LICENSE": "9cfa406d103afff6b45bcf7d740e4fc2f13b34843c06c1b2c575b4b45a73fc77",
+        "portfolio/SyncSpace/README.md": "9db5f998b77b1cf6b5ac1b0605b7653befe0e1cace19112765c8f1aadb77f5bd",
+        "portfolio/SyncSpace/SECURITY.md": "af7eb9c492662fa7cb99f97b88185f0753dd8e248466f67de95cd7a601ae65e9",
+        "portfolio/SyncSpace/client/App.tsx": "3578fbe8abe6b6e9a47244816c2f11ef797dcb8a31cbad07bb463efeaf0213f8",
+        "portfolio/SyncSpace/client/index.html": "da6cc0007eee5de59132f5a17b93fbfe2b5979058461867e0ef80f311bde6cd2",
+        "portfolio/SyncSpace/client/main.tsx": "9b00ccef296e7d17c526bb6f8077b462d6ca1f82d3421156c6bdc929c4e606c7",
+        "portfolio/SyncSpace/client/style.css": "2ccd84007cace4850944dfe6d384faab99985aad897ffe294b508ae61df3288e",
+        "portfolio/SyncSpace/demo.ts": "9bf8ee18dc98f1721b292bbd3f6f90653640dcf66460b796d159544a56da8db4",
+        "portfolio/SyncSpace/docker-compose.yml": "0c8846e1f6090908461e33180eed871fa32b15b17b226a763c70349339891cba",
+        "portfolio/SyncSpace/package-lock.json": "3ddbd1d11f9bdf61a584ee8adb244603ceda64f858c34ee9029e67ec98bb9422",
+        "portfolio/SyncSpace/package.json": "b2e4dcddad6faa08015f2806cbeb568788b1b2e17bb6801447f7902fb4234198",
+        "portfolio/SyncSpace/server/app.ts": "e7cb64ea0d3f76040b4b48ad49f14ca95bd4c9b8562baa6b3fc5fef81df88eab",
+        "portfolio/SyncSpace/server/index.ts": "c82412ba29eff477e7536d993eb153734bf288882ee4c2c269bb97cd0dd0e6b3",
+        "portfolio/SyncSpace/shared/model.ts": "8372623b91056d96c6ab423f89a4681bd13362e248b85bd29bda93e0a2fdb2c8",
+        "portfolio/SyncSpace/tests/model.test.ts": "d5c35c8c8ca52e2d3ba378d059648bc0d8e94b2082e5539337dce05fb85bafd3",
+        "portfolio/SyncSpace/tests/websocket.test.ts": "defd4cdfe81577b2db0b00ec6ad9c9258f4fe4393065f18ae98ffd8ac2a2d87c",
+        "portfolio/SyncSpace/tsconfig.json": "011308166d65e4d9811e8a77530195d627a722005717ca6932675166cacf98f4",
+        "portfolio/SyncSpace/tsconfig.server.json": "cef4043684bcafea60eff2d41f38e009ba60d8d0fe01bc0f7195450f7874d9fe"
+      },
+      "publication_commit": null
     },
     {
       "name": "StreamForge",
