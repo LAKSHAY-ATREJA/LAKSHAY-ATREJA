@@ -1,0 +1,46 @@
+name: StreamForge CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "portfolio/StreamForge/**"
+      - ".github/workflows/streamforge.yml"
+  pull_request:
+    paths:
+      - "portfolio/StreamForge/**"
+      - ".github/workflows/streamforge.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    defaults:
+      run:
+        working-directory: portfolio/StreamForge
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: portfolio/StreamForge/uv.lock
+      - name: Install locked dependencies
+        run: uv sync --frozen --extra dev
+      - name: Lint and format check
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+      - name: Tests
+        run: uv run pytest -q
+      - name: Build package
+        run: uv build
+      - name: Credential-free HTTP demo
+        run: uv run python demo.py

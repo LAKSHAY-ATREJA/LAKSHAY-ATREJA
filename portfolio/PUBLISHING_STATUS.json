@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "LAKSHAY-ATREJA",
-  "updated_on": "2026-10-19",
+  "updated_on": "2026-10-20",
   "source_bundle_library_id": "libfile_341919f3e3188191bc509b6e979ef012",
   "queue": [
     {
@@ -230,8 +230,44 @@
     },
     {
       "name": "StreamForge",
-      "status": "pending",
-      "path": "portfolio/StreamForge"
+      "status": "published",
+      "path": "portfolio/StreamForge",
+      "published_on": "2026-10-20",
+      "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
+      "local_checks": {
+        "test_cases": 5,
+        "ruff_check": "passed",
+        "ruff_format": "passed",
+        "compileall": "passed",
+        "package_build": "source distribution and wheel passed",
+        "http_demo": "passed: health, five-event baseline, anomaly signal, duplicate rejection and too-late rejection"
+      },
+      "hosted_ci": {
+        "status": "pending",
+        "checked_on": "2026-10-20"
+      },
+      "file_sha256": {
+        "portfolio/StreamForge/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
+        "portfolio/StreamForge/.gitignore": "46344db5799b53d12e8853be96c6ede97cea02459544cb91eb71f62647170832",
+        "portfolio/StreamForge/CHANGELOG.md": "d26477b891698b1370202dc1d1a67b08d54f4aebd3d4cc063c0be59e0649cb04",
+        "portfolio/StreamForge/CONTRIBUTING.md": "d41b7edbee0e5147c59537702acf2115687c333adb53c57cdb0bbaf4a725e4ac",
+        "portfolio/StreamForge/Dockerfile": "e11f576c523980e233c018b1c02b61be5ddd20c5600ab34d50a840122a867129",
+        "portfolio/StreamForge/GITHUB_METADATA.md": "b3f75a8189e73badd10a2729c634ed913d377c79fdedc9721f790bc74d65a81a",
+        "portfolio/StreamForge/LICENSE": "9cfa406d103afff6b45bcf7d740e4fc2f13b34843c06c1b2c575b4b45a73fc77",
+        "portfolio/StreamForge/README.md": "03f9db16062fa0cf255eddb6e6d8c53f3d200fcbc313f32c4a0c00bb28467fd8",
+        "portfolio/StreamForge/SECURITY.md": "af7eb9c492662fa7cb99f97b88185f0753dd8e248466f67de95cd7a601ae65e9",
+        "portfolio/StreamForge/demo.py": "405c544954b419329900b59d8d074a47faab50e2054269a1b80d660601f5b295",
+        "portfolio/StreamForge/docker-compose.yml": "80a6b8d6b3197056a2da652b5a372f4f50468f45dea4f5ed6961cee4de17c46c",
+        "portfolio/StreamForge/pyproject.toml": "91189a2bcaf538d3320bc201eb7f28b310c20b2787d4c05c2d6ea2706269c1b6",
+        "portfolio/StreamForge/streamforge/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "portfolio/StreamForge/streamforge/api.py": "609d5dba6aa698c6b2117b03bca3aa961fe1f077bca00ab91a836f1114c94357",
+        "portfolio/StreamForge/streamforge/consumer.py": "d1678e5334f7617900a9d5a222aa5a6bff20842fec2b0587cfbb8c64bf3af994",
+        "portfolio/StreamForge/streamforge/engine.py": "e35680006968904bce06c1c8d17a3596b3ca048df80008e5df5a490901d0a1b3",
+        "portfolio/StreamForge/tests/test_api.py": "19ef211150b1dc7a95ba8c8cb2b242a36f2e951d68fdf0bfee34d678af61ea97",
+        "portfolio/StreamForge/tests/test_engine.py": "74c0421f6c495c3ff138f10c09ea078993919c76e451c6d046fca04c91660452",
+        "portfolio/StreamForge/uv.lock": "a119224dbe613b06e951fa3ae3259c1f4c203feac6e2637dc64fa2fcc773c64a"
+      },
+      "publication_commit": null
     },
     {
       "name": "PlatformKit",
