@@ -243,8 +243,11 @@
         "http_demo": "passed: health, five-event baseline, anomaly signal, duplicate rejection and too-late rejection"
       },
       "hosted_ci": {
-        "status": "pending",
-        "checked_on": "2026-10-20"
+        "status": "success",
+        "run_id": 39407442765,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39407442765",
+        "checked_on": "2026-10-20",
+        "checks": "Python 3.11 and 3.12 locked install, Ruff, 5 tests, source and wheel build, and credential-free HTTP demo"
       },
       "file_sha256": {
         "portfolio/StreamForge/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
@@ -267,7 +270,7 @@
         "portfolio/StreamForge/tests/test_engine.py": "74c0421f6c495c3ff138f10c09ea078993919c76e451c6d046fca04c91660452",
         "portfolio/StreamForge/uv.lock": "a119224dbe613b06e951fa3ae3259c1f4c203feac6e2637dc64fa2fcc773c64a"
       },
-      "publication_commit": null
+      "publication_commit": "cf0d9e667f5185e8e09fe39002481149959b2473"
     },
     {
       "name": "PlatformKit",
