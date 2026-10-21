@@ -41,7 +41,7 @@ Order is tuned for general software, backend, and cloud roles. For AI, data, or 
 
 ## Engineering Experience
 
-At **CBRE Digital & Technology**, I worked on a production document-intelligence pipeline used across 1,000+ valuation documents, helping reduce processing time from over four hours to under 15 minutes.
+At **CBRE Digital & Technology**, I worked on a production document-intelligence pipeline used across 1,000+ valuation documents, helping reduce processing time from more than four hours to under 15 minutes (approximately 94%).
 
 ## What I am building around
 
