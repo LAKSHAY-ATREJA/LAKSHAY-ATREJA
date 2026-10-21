@@ -20,9 +20,10 @@ Order is tuned for general software, backend, and cloud roles. For AI, data, or 
 
 1. **[DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api)** — JWT-authenticated Node.js/Express API with owner-scoped job-application records, validation, filtering, sorting, pagination, aggregate statistics, automated tests, and a Docker demo.
 2. **[OrderMesh](portfolio/OrderMesh)** — Java 17/Spring Boot order-service reference demonstrating idempotent writes and the transactional outbox pattern, with a runnable H2 demo and verified tests.
-3. **[SignalOps](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API)** — Async FastAPI service for telemetry ingestion, rolling anomaly baselines, and severity-classified incident handling, with SQLite local setup and PostgreSQL/Docker support.
-4. **[StreamForge](portfolio/StreamForge)** — Python event-time processing reference with per-key windows, watermarks, deduplication, late-event handling, and anomaly signals; includes a runnable HTTP demo and tests.
-5. **[Flagship Feature Flags](portfolio/Flagship-Feature-Flags)** — Go feature-flag API for stable percentage rollouts, attribute targeting, and kill switches, with a concurrency-safe engine and race-tested checks.
+3. **[PlatformKit](portfolio/PlatformKit)** — Terraform AWS foundation plus Kubernetes/Helm examples with autoscaling, health probes, and Prometheus alerts; includes a credential-free demo and CI checks, with no cloud deployment claimed.
+4. **[SignalOps](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API)** — Async FastAPI service for telemetry ingestion, rolling anomaly baselines, and severity-classified incident handling, with SQLite local setup and PostgreSQL/Docker support.
+5. **[StreamForge](portfolio/StreamForge)** — Python event-time processing reference with per-key windows, watermarks, deduplication, late-event handling, and anomaly signals; includes a runnable HTTP demo and tests.
+6. **[Flagship Feature Flags](portfolio/Flagship-Feature-Flags)** — Go feature-flag API for stable percentage rollouts, attribute targeting, and kill switches, with a concurrency-safe engine and race-tested checks.
 
 ### Applied AI & retrieval
 
