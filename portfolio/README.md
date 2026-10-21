@@ -13,13 +13,14 @@ These levels rank what to show first for graduate software/backend/cloud roles. 
 |---:|---|---|
 | 1 | [DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api) | JWT-authenticated Node.js/Express API with user-scoped records, validation, filtering, pagination, aggregate statistics, automated tests, and a Docker demo. |
 | 2 | [OrderMesh](OrderMesh) | Java 17/Spring Boot order-service reference demonstrating idempotent writes and a transactional outbox, with a runnable H2 demo and verified tests. |
-| 3 | [SignalOps](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API) | Async FastAPI telemetry and incident service with rolling anomaly baselines, severity classification, database persistence, Docker support, tests, and CI. |
-| 4 | [StreamForge](StreamForge) | Python event-time processing reference with windows, watermarks, deduplication, late-event rejection, and anomaly signals; single-process state with a runnable HTTP demo. |
-| 5 | [Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform) | Multi-PDF analysis for summaries, entity extraction, document comparison, and source-attributed Q&A using LangChain and FAISS. |
-| 6 | [RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit) | Dependency-light retrieval evaluation library and CLI with standard ranking metrics, retriever comparison, automated tests, and JSON/CSV export. |
-| 7 | [Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) | Computer-vision desktop app combining optical flow and shape-from-shading to estimate calibrated water velocities from video. |
+| 3 | [PlatformKit](PlatformKit) | Terraform AWS foundation plus Kubernetes/Helm examples with autoscaling, health probes, and Prometheus alerts; credential-free demo and CI checks, with no cloud deployment claimed. |
+| 4 | [SignalOps](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API) | Async FastAPI telemetry and incident service with rolling anomaly baselines, severity classification, database persistence, Docker support, tests, and CI. |
+| 5 | [StreamForge](StreamForge) | Python event-time processing reference with windows, watermarks, deduplication, late-event rejection, and anomaly signals; single-process state with a runnable HTTP demo. |
+| 6 | [Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform) | Multi-PDF analysis for summaries, entity extraction, document comparison, and source-attributed Q&A using LangChain and FAISS. |
+| 7 | [RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit) | Dependency-light retrieval evaluation library and CLI with standard ranking metrics, retriever comparison, automated tests, and JSON/CSV export. |
+| 8 | [Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) | Computer-vision desktop app combining optical flow and shape-from-shading to estimate calibrated water velocities from video. |
 
-For **backend/platform applications**, lead with 1–4. For **applied AI/RAG**, move 5–6 up. For **computer vision**, lead with 7.
+For **backend/API applications**, lead with 1–2 and 4–5. For **cloud/platform/SRE applications**, promote 3–5. For **applied AI/RAG**, move 6–7 up. For **computer vision**, lead with 8.
 
 ### Level B — Role-specific supporting projects
 
