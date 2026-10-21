@@ -1,3 +1,6 @@
-# Publication location
+# GitHub metadata
 
-This project is published at `LAKSHAY-ATREJA/LAKSHAY-ATREJA/portfolio/LedgerFlow`. It is a project folder, not a standalone repository. The runnable implementation is Python/FastAPI.
+**Publication location:** `LAKSHAY-ATREJA/LAKSHAY-ATREJA/portfolio/LedgerFlow`  
+**Description:** Python/FastAPI double-entry ledger reference with idempotent transfers, an inspectable journal, a runnable HTTP demo, and automated tests.  
+**Topics:** `python`, `fastapi`, `accounting`, `idempotency`, `rest-api`  
+**Portfolio level:** B — supporting backend example; in-memory educational scope.
