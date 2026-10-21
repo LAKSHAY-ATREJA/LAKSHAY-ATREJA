@@ -290,8 +290,11 @@
         "terraform_validate": "local provider handshake blocked by sandbox Unix-socket policy; official provider ZIP checksum verified; hosted CI required"
       },
       "hosted_ci": {
-        "status": "pending",
-        "checked_on": "2026-10-21"
+        "status": "success",
+        "run_id": 39584769436,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39584769436",
+        "checked_on": "2026-10-21",
+        "checks": "Python 3.12 locked install, Ruff, 3 tests, credential-free HTTP demo, Helm lint/template, Terraform format/validate, and promtool rule validation"
       },
       "file_sha256": {
         "portfolio/PlatformKit/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
@@ -320,7 +323,7 @@
         "portfolio/PlatformKit/tests/test_demo.py": "3cbb798d5a52d04684ad2a94f0e40d907f9f592974aaf24bbc58f3ed3cdff79d",
         "portfolio/PlatformKit/tests/test_manifests.py": "44f20c15cbb3830d2ea550fdced7e92905a9f987bd0fb6a3fd65ac65791084d7"
       },
-      "publication_commit": null
+      "publication_commit": "578bf39c69bbaeeb4cda9319f605b20947ee330d"
     },
     {
       "name": "APISentinel",
