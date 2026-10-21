@@ -1,5 +1,6 @@
-# GitHub Repository Metadata
+# GitHub repository metadata
 
 **Repository:** `ragguard-ai-platform`  
-**Description:** Offline-first RAG reference gateway with hybrid retrieval, guardrails, evaluation and optional model-provider integration.  
-**Topics:** `python`, `rag`, `llm`, `fastapi`, `ai-engineering`, `llmops`
+**Description:** Offline-first FastAPI RAG gateway reference with hybrid retrieval, heuristic input guardrails, citation checks, and a deterministic local demo; optional external model-provider path is not part of release checks.  
+**Topics:** `python`, `rag`, `llm`, `fastapi`, `ai-engineering`, `llmops`  
+**Portfolio level:** B — supporting project for applied AI and RAG roles.
