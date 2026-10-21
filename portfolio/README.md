@@ -2,6 +2,55 @@
 
 Each release includes source, setup instructions, a runnable local demonstration, tests and documented limitations. Publication dates reflect actual releases. Local checks and GitHub-hosted CI are reported separately.
 
+
+## Project priorities and levels
+
+These levels rank what to show first for graduate software/backend/cloud roles. They reflect visible technical depth, relevance, and evidence in the repositories—not production deployment. For a specific application, promote the matching AI, data, or computer-vision project from Level A or B.
+
+### Level A — Lead with these
+
+| Priority | Project | Best short description |
+|---:|---|---|
+| 1 | [DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api) | JWT-authenticated Node.js/Express API with user-scoped records, validation, filtering, pagination, aggregate statistics, automated tests, and a Docker demo. |
+| 2 | [OrderMesh](OrderMesh) | Java 17/Spring Boot order-service reference demonstrating idempotent writes and a transactional outbox, with a runnable H2 demo and verified tests. |
+| 3 | [SignalOps](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API) | Async FastAPI telemetry and incident service with rolling anomaly baselines, severity classification, database persistence, Docker support, tests, and CI. |
+| 4 | [StreamForge](StreamForge) | Python event-time processing reference with windows, watermarks, deduplication, late-event rejection, and anomaly signals; single-process state with a runnable HTTP demo. |
+| 5 | [Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform) | Multi-PDF analysis for summaries, entity extraction, document comparison, and source-attributed Q&A using LangChain and FAISS. |
+| 6 | [RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit) | Dependency-light retrieval evaluation library and CLI with standard ranking metrics, retriever comparison, automated tests, and JSON/CSV export. |
+| 7 | [Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) | Computer-vision desktop app combining optical flow and shape-from-shading to estimate calibrated water velocities from video. |
+
+For **backend/platform applications**, lead with 1–4. For **applied AI/RAG**, move 5–6 up. For **computer vision**, lead with 7.
+
+### Level B — Role-specific supporting projects
+
+| Project | Best short description |
+|---|---|
+| [Flagship Feature Flags](Flagship-Feature-Flags) | Concurrency-safe Go feature-flag service with stable percentage rollouts, attribute targeting, and an immediate kill switch. |
+| [LedgerFlow](LedgerFlow) | Python/FastAPI double-entry ledger reference with idempotent transfers, an inspectable journal, a runnable HTTP demo, and automated tests; in-memory educational scope. |
+| [RAGGuard](RAGGuard-AI-Platform) | Offline-first FastAPI RAG gateway reference with hybrid retrieval, heuristic input checks, citation evaluation, and a deterministic local demo. |
+| [SyncSpace](SyncSpace) | TypeScript/React task-board reference using WebSockets and versioned edits to reject stale writes; no authentication or persistent storage. |
+| [Online Retail Analytics](https://github.com/LAKSHAY-ATREJA/online-retail-analytics) | End-to-end analysis of roughly one million transactions, covering cleaning, SQL, revenue exploration, RFM segmentation, and a Streamlit dashboard. |
+| [StockSight](https://github.com/LAKSHAY-ATREJA/StockSight-LSTM-Stock-Price-Predictor) | LSTM forecasting app with a REST API and dashboard; forecasts are experimental and not investment advice. |
+| [Multi-Agent Research System](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system) | Streamlit research workflow that runs five specialist agents sequentially to plan, research, analyse, write, and review a report. |
+
+### Level C — Supporting demos and foundations
+
+| Project | Best short description |
+|---|---|
+| [RAG Document Q&A](https://github.com/LAKSHAY-ATREJA/Rag-pipeline-for-Document-search-) | Streamlit PDF question-answering prototype using chunking, embeddings, FAISS retrieval, and cited responses. |
+| [AI Code Reviewer](https://github.com/LAKSHAY-ATREJA/ai-code-reviewer) | Groq-powered Python code-review demo for bug/security suggestions, test generation, and code explanations; generated findings need human verification. |
+| [Real-Time News Sentiment Analyser](https://github.com/LAKSHAY-ATREJA/Real-Time-News-Sentiment-Analyser) | Flask dashboard that scores fetched headlines with a custom financial lexicon and provides mock data for local use without an API key. |
+| [AI Chat Assistant](https://github.com/LAKSHAY-ATREJA/AI-chat-Assistant) | Streamlit/LangChain chat demo with five personas, session conversation memory, and structured error handling. |
+| [CIFAR-10](https://github.com/LAKSHAY-ATREJA/CIFAR-10) | TensorFlow/Keras image-classification study comparing a custom CNN with DenseNet121 transfer learning on CIFAR-10. |
+| [Titanic Survival Prediction](https://github.com/LAKSHAY-ATREJA/Titanic-Survival-Prediction) | Foundational tabular-classification project comparing Random Forest, SVM, and Logistic Regression. |
+
+### Projects not currently linked publicly
+
+Your CV also lists **AgeOverflow Cloud Microservices** and the **Gaussian Splatting thesis**. I did not find public repositories or portfolio folders for these in the account scan. The profile mentions the thesis, but it has no public code link yet.
+
+## Release status
+
+
 | Project | Current publication status |
 | --- | --- |
 | [LedgerFlow](LedgerFlow) | Complete implementation released 8 October 2026; 8 tests and real HTTP demo passed locally |
