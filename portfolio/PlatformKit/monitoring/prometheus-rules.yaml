@@ -1,0 +1,13 @@
+groups:
+- name: platformkit
+  rules:
+  - alert: High5xxRate
+    expr: sum(rate(http_requests_total{status=~"5.."}[5m])) / clamp_min(sum(rate(http_requests_total[5m])), 1) > 0.05
+    for: 10m
+    labels: {severity: page}
+    annotations: {summary: "5xx error rate is above 5%"}
+  - alert: LatencyBudgetBurn
+    expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) > 0.5
+    for: 15m
+    labels: {severity: ticket}
+    annotations: {summary: "p95 request latency is above 500 ms"}

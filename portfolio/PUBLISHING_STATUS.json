@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "LAKSHAY-ATREJA",
-  "updated_on": "2026-10-20",
+  "updated_on": "2026-10-21",
   "source_bundle_library_id": "libfile_341919f3e3188191bc509b6e979ef012",
   "queue": [
     {
@@ -274,8 +274,53 @@
     },
     {
       "name": "PlatformKit",
-      "status": "pending",
-      "path": "portfolio/PlatformKit"
+      "status": "published",
+      "path": "portfolio/PlatformKit",
+      "published_on": "2026-10-21",
+      "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
+      "local_checks": {
+        "test_cases": 3,
+        "ruff_check": "passed",
+        "ruff_format": "passed",
+        "compileall": "passed",
+        "http_demo": "passed: health, Prometheus metric and unknown-path rejection",
+        "helm_lint": "passed with Helm 3.16.4",
+        "helm_template": "passed: Service and Deployment rendered",
+        "terraform_fmt": "passed with Terraform 1.9.8",
+        "terraform_validate": "local provider handshake blocked by sandbox Unix-socket policy; official provider ZIP checksum verified; hosted CI required"
+      },
+      "hosted_ci": {
+        "status": "pending",
+        "checked_on": "2026-10-21"
+      },
+      "file_sha256": {
+        "portfolio/PlatformKit/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
+        "portfolio/PlatformKit/.gitignore": "46344db5799b53d12e8853be96c6ede97cea02459544cb91eb71f62647170832",
+        "portfolio/PlatformKit/CHANGELOG.md": "71921961bba685e488b6d6e090e4ab1ccbd5a3acfec0b9d99b414c33d964cf0b",
+        "portfolio/PlatformKit/CONTRIBUTING.md": "d41b7edbee0e5147c59537702acf2115687c333adb53c57cdb0bbaf4a725e4ac",
+        "portfolio/PlatformKit/GITHUB_METADATA.md": "a119c84da6b0a19ef11742fb1d081725563a8e0f5de87bff0332f0b9bcc0d3c8",
+        "portfolio/PlatformKit/LICENSE": "9cfa406d103afff6b45bcf7d740e4fc2f13b34843c06c1b2c575b4b45a73fc77",
+        "portfolio/PlatformKit/Makefile": "38c2538d8dd3e365cd1d16b822c85e2633727449ff809d3890023af6b4d87b79",
+        "portfolio/PlatformKit/README.md": "f41401e8c9b62ef2d328cfaf163057248187139a3625fd96613f78f6bd222556",
+        "portfolio/PlatformKit/SECURITY.md": "af7eb9c492662fa7cb99f97b88185f0753dd8e248466f67de95cd7a601ae65e9",
+        "portfolio/PlatformKit/demo.py": "e3eb90a6dd356e4ac332649165c908b9cdeb94eb7a7378bf46f363c8c3af272b",
+        "portfolio/PlatformKit/demo/Dockerfile": "145db15e3df9b9bf695044e8e1dfe9999e635fed1d9460455002fec048aca19b",
+        "portfolio/PlatformKit/demo/app.py": "a1027bbc9d617bc3381eaf5909f8b5441b44a06ce2b9a4b8fae178383e5404c8",
+        "portfolio/PlatformKit/helm/platformkit/Chart.yaml": "45ff9f0d9d92981f5d8184ba82ec209a9b3ec6bbd357069e73fe86d165a64020",
+        "portfolio/PlatformKit/helm/platformkit/templates/deployment.yaml": "002dbb68221875ae79706873aba31e6b45157a6813c7d3337406c57f5f02ed8e",
+        "portfolio/PlatformKit/helm/platformkit/templates/service.yaml": "eb5a2b6f924eaabefa8a24c2f4f38caabf47ac2f9080e2c472f960d754b5b7d6",
+        "portfolio/PlatformKit/helm/platformkit/values.yaml": "79fe4159bce18663d58e5dcfb8f6d5939275d1ffa226e59a28f341ed2af137b9",
+        "portfolio/PlatformKit/k8s/base/deployment.yaml": "130e3039c1f1a3a1a4ad06096104a5ee025f068c9451eb256517585e201eeee7",
+        "portfolio/PlatformKit/k8s/base/hpa.yaml": "492146dcb77bc5b97d1e0890aefbc71995bec87cc8fa6dffca12534b7eb66452",
+        "portfolio/PlatformKit/monitoring/prometheus-rules.yaml": "fad7cd3541997a2221eed8d68e5ce7c01a20bbebf2283bd7a870c5902142480d",
+        "portfolio/PlatformKit/requirements-dev.lock": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a",
+        "portfolio/PlatformKit/terraform/.terraform.lock.hcl": "4c666089f19251c562fa001bab814535a963b8b27f2cafe0f5a91506e99afdd8",
+        "portfolio/PlatformKit/terraform/main.tf": "849e5e4d039938214568ef1d27f4058800f11c51a7d53ac10f87ae176ea3b0af",
+        "portfolio/PlatformKit/terraform/variables.tf": "bc0a52fd30746c8c3ca0504d6943e15709046309175e7ea4336880879bc32c16",
+        "portfolio/PlatformKit/tests/test_demo.py": "3cbb798d5a52d04684ad2a94f0e40d907f9f592974aaf24bbc58f3ed3cdff79d",
+        "portfolio/PlatformKit/tests/test_manifests.py": "44f20c15cbb3830d2ea550fdced7e92905a9f987bd0fb6a3fd65ac65791084d7"
+      },
+      "publication_commit": null
     },
     {
       "name": "APISentinel",

@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: platformkit-demo}
+spec:
+  replicas: 2
+  selector: {matchLabels: {app: platformkit-demo}}
+  template:
+    metadata: {labels: {app: platformkit-demo}}
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: app
+          image: platformkit-demo:local
+          imagePullPolicy: IfNotPresent
+          ports: [{containerPort: 8080}]
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: ["ALL"]}
+          resources:
+            requests: {cpu: 50m, memory: 64Mi}
+            limits: {cpu: 250m, memory: 256Mi}
+          readinessProbe: {httpGet: {path: /health, port: 8080}, initialDelaySeconds: 3, periodSeconds: 5}
+          livenessProbe: {httpGet: {path: /health, port: 8080}, initialDelaySeconds: 10, periodSeconds: 10}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: platformkit-demo}
+spec: {selector: {app: platformkit-demo}, ports: [{port: 80, targetPort: 8080}]}

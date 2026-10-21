@@ -1,0 +1,52 @@
+name: PlatformKit CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "portfolio/PlatformKit/**"
+      - ".github/workflows/platformkit.yml"
+  pull_request:
+    paths:
+      - "portfolio/PlatformKit/**"
+      - ".github/workflows/platformkit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio/PlatformKit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: portfolio/PlatformKit/requirements-dev.lock
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.8"
+      - uses: azure/setup-helm@v4
+        with:
+          version: v3.16.4
+      - name: Install locked test dependency
+        run: python -m pip install -r requirements-dev.lock
+      - name: Python tests and demo
+        run: |
+          make python-check
+          make demo
+      - name: Helm validation
+        run: make helm-check
+      - name: Terraform format and validation
+        run: |
+          make fmt-check
+          make terraform-validate
+      - name: Prometheus rule validation
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes prometheus
+          promtool check rules monitoring/prometheus-rules.yaml

@@ -1,0 +1,7 @@
+replicaCount: 2
+image:
+  repository: platformkit-demo
+  tag: local
+  pullPolicy: IfNotPresent
+service:
+  port: 80

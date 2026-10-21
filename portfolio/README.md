@@ -10,7 +10,7 @@ Each release includes source, setup instructions, a runnable local demonstration
 | [RAGGuard AI Platform](RAGGuard-AI-Platform) | Complete offline-first Python implementation released 10 October 2026; 6 tests and real HTTP demo passed locally |
 | [SyncSpace](SyncSpace) | Complete TypeScript/React/WebSocket implementation released 19 October 2026; tests, production build, live demo and visual review passed locally |
 | [StreamForge](StreamForge) | Complete Python event-processing reference released 20 October 2026; 5 tests, package build and real HTTP demo passed locally |
-| PlatformKit | Queued; Terraform validation still needs resolution |
+| [PlatformKit](PlatformKit) | Complete Terraform/Kubernetes/Helm reference released 21 October 2026; tests, HTTP demo, Helm checks and Terraform formatting passed locally |
 | APISentinel | Queued for validation and release |
 | SearchGrid | Queued for validation and release |
 | SLOForge | Queued for validation and release |
@@ -26,5 +26,7 @@ RAGGuard AI Platform is an offline-first RAG reference gateway. Six tests, Ruff 
 SyncSpace is an in-memory collaborative task-board reference app. Type checking, two focused tests, a production build and a real two-client WebSocket demo passed locally; desktop and mobile renders were inspected. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39236560373) with Node 22, the locked dependency graph and the same build and WebSocket demo. It has no authentication, persistence or multi-node coordination, and no hosted service or Docker execution is claimed.
 
 StreamForge is a single-process event-time processing reference. Five tests, Ruff checks, compilation, source and wheel builds, and a real loopback HTTP demo passed locally; the demo covered health, baseline ingestion, anomaly signalling, duplicate rejection and too-late rejection. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39407442765) on Python 3.11 and 3.12 with the locked environment, package build and the same demo. State and deduplication IDs are in memory, the anomaly rule is a small population-z-score heuristic, and Redpanda, Docker, multi-partition recovery, load testing and hosted deployment were not exercised.
+
+PlatformKit is an infrastructure-reference project covering an AWS Terraform foundation, hardened Kubernetes and Helm deployment examples, autoscaling, health probes and Prometheus alerts. Three manifest/HTTP tests, Ruff checks, compilation, a real loopback demo, Helm lint/template and Terraform formatting passed locally. The official AWS provider archive matched HashiCorp's checksum, but this local sandbox blocks the provider's Unix-domain socket, so hosted CI must complete `terraform validate`. No AWS plan/apply, container build, cluster deployment, load test, hosted service or cloud cost is claimed.
 
 The remaining entries are a release queue, not claims of completed publication. Existing partial folders remain visible until their complete replacements pass their release checks.
