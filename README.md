@@ -2,7 +2,7 @@
 
 Software Engineering (Honours) graduate from The University of Queensland, based in Brisbane, Australia.
 
-I build backend systems, cloud infrastructure, distributed applications, and applied AI products. My recent work focuses on production-oriented APIs, retrieval systems, observability, document intelligence, containerised services, and reliable deployment workflows.
+I build backend, cloud, and applied AI systems. My strongest work focuses on secure APIs, event processing, retrieval systems, observability, and computer vision.
 
 ## Core Stack
 
@@ -12,45 +12,44 @@ I build backend systems, cloud infrastructure, distributed applications, and app
 **AI / ML:** RAG, LangChain, FAISS, TensorFlow, scikit-learn, OpenCV  
 **Engineering:** Testing, API security, observability, retrieval evaluation, asynchronous services
 
-## Runnable portfolio
+## Featured Projects
 
-[LedgerFlow](portfolio/LedgerFlow) — a double-entry ledger API with an automated HTTP demo, retry/concurrency tests and explicit implementation limits.
+Order is tuned for general software, backend, and cloud roles. For AI, data, or computer-vision applications, move the relevant specialist projects higher; the [full portfolio index](portfolio/README.md) groups them by level and role.
 
-[View the project release queue](portfolio/README.md).
+### Backend & platform
 
-## Selected Projects
+1. **[DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api)** — JWT-authenticated Node.js/Express API with owner-scoped job-application records, validation, filtering, sorting, pagination, aggregate statistics, automated tests, and a Docker demo.
+2. **[OrderMesh](portfolio/OrderMesh)** — Java 17/Spring Boot order-service reference demonstrating idempotent writes and the transactional outbox pattern, with a runnable H2 demo and verified tests.
+3. **[SignalOps](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API)** — Async FastAPI service for telemetry ingestion, rolling anomaly baselines, and severity-classified incident handling, with SQLite local setup and PostgreSQL/Docker support.
+4. **[StreamForge](portfolio/StreamForge)** — Python event-time processing reference with per-key windows, watermarks, deduplication, late-event handling, and anomaly signals; includes a runnable HTTP demo and tests.
+5. **[Flagship Feature Flags](portfolio/Flagship-Feature-Flags)** — Go feature-flag API for stable percentage rollouts, attribute targeting, and kill switches, with a concurrency-safe engine and race-tested checks.
 
-### [SignalOps — Cloud Service Health & Incident Detection API](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API)
-Production-style FastAPI service for telemetry ingestion, rolling baselines, automated anomaly detection, severity-classified incidents, PostgreSQL persistence, Docker and CI.
+### Applied AI & retrieval
 
-### [DevTrack API](https://github.com/LAKSHAY-ATREJA/devtrack-api)
-Secure Node.js/Express backend with JWT authentication, ownership isolation, MongoDB, pagination, aggregation, rate limiting, request tracing, automated tests, Docker and CI.
+- **[Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform)** — Multi-PDF analysis with summaries, entity extraction, cross-document comparison, and source-attributed Q&A using LangChain and FAISS.
+- **[RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit)** — Dependency-light Python library and CLI for retrieval metrics including Precision@k, Recall@k, MRR, MAP, and nDCG, with retriever comparison and JSON/CSV export.
+- **[RAGGuard](portfolio/RAGGuard-AI-Platform)** — Offline-first RAG gateway reference demonstrating hybrid retrieval, heuristic input checks, cited evidence, and evaluation without requiring an API key for its local demo.
 
-### [RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit)
-Dependency-light Python toolkit for measuring retrieval quality with Precision@k, Recall@k, F1, MRR, MAP and nDCG. Includes CLI tooling, automated tests and a CI quality gate for retrieval regressions.
+### Computer vision & research
 
-### [Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform)
-Multi-document AI system for PDF ingestion, semantic retrieval, entity extraction, cross-document comparison and source-grounded Q&A using FAISS, LangChain and LLM inference. Includes containerised deployment.
+- **[Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application)** — OpenCV/PyQt5 desktop application estimating calibrated water velocities from video with Farnebäck optical flow and shape-from-shading.
+- My honours thesis explored **Gaussian Splatting hole repair and provenance visualisation**, combining 3D reconstruction, computer vision, and generative inpainting. The thesis is not currently linked to a public repository here.
 
-### [Multi-Agent Research System](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system)
-Five-agent research pipeline covering planning, research, analysis, synthesis and quality review, with a Streamlit interface, deployment configuration and Docker support.
+### More runnable systems
 
-### [Fluid Dynamics Video Analysis Application](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application)
-Computer-vision desktop application using OpenCV and PyQt5 for video-based fluid-dynamics analysis and visualisation.
+[LedgerFlow](portfolio/LedgerFlow) demonstrates double-entry transfers and idempotent retries; [SyncSpace](portfolio/SyncSpace) is a TypeScript/React WebSocket task-board reference with version checks that reject stale edits. The [portfolio index](portfolio/README.md) records each project’s tests, demos, and limitations.
 
 ## Engineering Experience
 
-At **CBRE Digital & Technology**, I worked on a production document-intelligence pipeline that reduced processing time from more than four hours to under 15 minutes across 1,000+ valuation documents.
-
-My honours research explored **Gaussian Splatting, generative image completion and provenance visualisation**, combining computer vision, 3D reconstruction and applied generative AI.
+At **CBRE Digital & Technology**, I worked on a production document-intelligence pipeline used across 1,000+ valuation documents, helping reduce processing time from over four hours to under 15 minutes.
 
 ## What I am building around
 
 - Backend and API engineering
 - Cloud-native and containerised services
-- Distributed/event-driven systems
+- Distributed and event-driven systems
 - Applied AI / RAG systems with measurable evaluation
-- Observability, reliability and production tooling
+- Observability, reliability, and production tooling
 
 ## Contact
 
