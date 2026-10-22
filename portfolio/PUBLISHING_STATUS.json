@@ -340,8 +340,11 @@
         "compiled_server_http": "passed: health and proxied request with correlation ID"
       },
       "hosted_ci": {
-        "status": "pending",
-        "checked_on": "2026-10-22"
+        "status": "success",
+        "run_id": 39763035922,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39763035922",
+        "checked_on": "2026-10-22",
+        "checks": "Go 1.23 and 1.24 format, vet, 7 race-tested cases, server build, and credential-free HTTP demo"
       },
       "file_sha256": {
         "portfolio/APISentinel/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
@@ -362,7 +365,7 @@
         "portfolio/APISentinel/gateway/limiter.go": "773ca983801024ba0e6ea20bdcafdb9d17d6c6ab6904219f18a175de15ab0c2f",
         "portfolio/APISentinel/go.mod": "74bb450a1ac8ab4230a58fcfa2d0f336f60bab24319b07a6fc8dbef7c1f6beca"
       },
-      "publication_commit": null
+      "publication_commit": "aa2e87b752e99ea6328194fbc02b4a1bf7f6fea7"
     },
     {
       "name": "SearchGrid",
