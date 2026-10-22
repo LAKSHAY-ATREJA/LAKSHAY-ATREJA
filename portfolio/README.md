@@ -16,9 +16,10 @@ These levels rank what to show first for graduate software/backend/cloud roles. 
 | 3 | [PlatformKit](PlatformKit) | Terraform AWS foundation plus Kubernetes/Helm examples with autoscaling, health probes, and Prometheus alerts; credential-free demo and CI checks, with no cloud deployment claimed. |
 | 4 | [SignalOps](https://github.com/LAKSHAY-ATREJA/SignalOps-Cloud-Service-Health-Incident-Detection-API) | Async FastAPI telemetry and incident service with rolling anomaly baselines, severity classification, database persistence, Docker support, tests, and CI. |
 | 5 | [StreamForge](StreamForge) | Python event-time processing reference with windows, watermarks, deduplication, late-event rejection, and anomaly signals; single-process state with a runnable HTTP demo. |
-| 6 | [Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform) | Multi-PDF analysis for summaries, entity extraction, document comparison, and source-attributed Q&A using LangChain and FAISS. |
-| 7 | [RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit) | Dependency-light retrieval evaluation library and CLI with standard ranking metrics, retriever comparison, automated tests, and JSON/CSV export. |
-| 8 | [Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) | Computer-vision desktop app combining optical flow and shape-from-shading to estimate calibrated water velocities from video. |
+| 6 | [APISentinel](APISentinel) | Go resilience gateway with per-client token-bucket limits, a half-open circuit breaker, upstream timeouts, correlation IDs, race-tested concurrency and a live HTTP demo. |
+| 7 | [Document Intelligence Platform](https://github.com/LAKSHAY-ATREJA/Document-Intelligence-Platform) | Multi-PDF analysis for summaries, entity extraction, document comparison, and source-attributed Q&A using LangChain and FAISS. |
+| 8 | [RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit) | Dependency-light retrieval evaluation library and CLI with standard ranking metrics, retriever comparison, automated tests, and JSON/CSV export. |
+| 9 | [Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application) | Computer-vision desktop app combining optical flow and shape-from-shading to estimate calibrated water velocities from video. |
 
 For **backend/API applications**, lead with 1–2 and 4–5. For **cloud/platform/SRE applications**, promote 3–5. For **applied AI/RAG**, move 6–7 up. For **computer vision**, lead with 8.
 
@@ -61,7 +62,7 @@ Your CV also lists **AgeOverflow Cloud Microservices** and the **Gaussian Splatt
 | [SyncSpace](SyncSpace) | Complete TypeScript/React/WebSocket implementation released 19 October 2026; tests, production build, live demo and visual review passed locally |
 | [StreamForge](StreamForge) | Complete Python event-processing reference released 20 October 2026; 5 tests, package build and real HTTP demo passed locally |
 | [PlatformKit](PlatformKit) | Complete Terraform/Kubernetes/Helm reference released 21 October 2026; tests, HTTP demo, Helm checks and Terraform formatting passed locally |
-| APISentinel | Queued for validation and release |
+| [APISentinel](APISentinel) | Complete Go resilience gateway released 22 October 2026; race tests, vet, build and live HTTP demo passed locally |
 | SearchGrid | Queued for validation and release |
 | SLOForge | Queued for validation and release |
 
@@ -79,4 +80,8 @@ StreamForge is a single-process event-time processing reference. Five tests, Ruf
 
 PlatformKit is an infrastructure-reference project covering an AWS Terraform foundation, hardened Kubernetes and Helm deployment examples, autoscaling, health probes and Prometheus alerts. Three manifest/HTTP tests, Ruff checks, compilation, a real loopback demo, Helm lint/template and Terraform formatting passed locally. The official AWS provider archive matched HashiCorp's checksum, but this local sandbox blocks the provider's Unix-domain socket. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39584769436), including `terraform validate` with Terraform 1.9.8 and Prometheus rule validation with `promtool`. No AWS plan/apply, container build, cluster deployment, load test, hosted service or cloud cost is claimed.
 
+
+APISentinel is a standard-library Go resilience gateway for one upstream. Seven focused tests passed under the race detector, along with `go vet`, server compilation, a credential-free loopback HTTP demo and a compiled-binary HTTP check. The verified behaviours cover health, path/query forwarding, correlation IDs, hop-by-hop header filtering, rate limiting, circuit opening and one half-open recovery probe. State is in memory and process-local; there is no authentication, TLS termination, trusted-proxy policy, distributed coordination, persistence or load testing. Container and hosted deployment execution are not claimed.
+
 The remaining entries are a release queue, not claims of completed publication. Existing partial folders remain visible until their complete replacements pass their release checks.
+

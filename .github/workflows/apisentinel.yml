@@ -1,0 +1,41 @@
+name: APISentinel CI
+
+on:
+  push:
+    paths:
+      - "portfolio/APISentinel/**"
+      - ".github/workflows/apisentinel.yml"
+  pull_request:
+    paths:
+      - "portfolio/APISentinel/**"
+      - ".github/workflows/apisentinel.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        go: ["1.23.x", "1.24.x"]
+    defaults:
+      run:
+        working-directory: portfolio/APISentinel
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go }}
+          cache: false
+      - name: Format check
+        run: test -z "$(gofmt -l .)"
+      - name: Vet
+        run: go vet ./...
+      - name: Race tests
+        run: go test -race ./...
+      - name: Build server
+        run: go build ./cmd/server
+      - name: Credential-free HTTP demo
+        run: go run ./cmd/demo

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "LAKSHAY-ATREJA",
-  "updated_on": "2026-10-21",
+  "updated_on": "2026-10-22",
   "source_bundle_library_id": "libfile_341919f3e3188191bc509b6e979ef012",
   "queue": [
     {
@@ -327,8 +327,42 @@
     },
     {
       "name": "APISentinel",
-      "status": "pending",
-      "path": "portfolio/APISentinel"
+      "status": "published",
+      "path": "portfolio/APISentinel",
+      "published_on": "2026-10-22",
+      "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
+      "local_checks": {
+        "test_cases": 7,
+        "race_tests": "passed with Go 1.23.12",
+        "go_vet": "passed",
+        "server_build": "passed",
+        "http_demo": "passed: health, forwarding, correlation ID, circuit open/recovery and rate limiting",
+        "compiled_server_http": "passed: health and proxied request with correlation ID"
+      },
+      "hosted_ci": {
+        "status": "pending",
+        "checked_on": "2026-10-22"
+      },
+      "file_sha256": {
+        "portfolio/APISentinel/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
+        "portfolio/APISentinel/.gitignore": "46344db5799b53d12e8853be96c6ede97cea02459544cb91eb71f62647170832",
+        "portfolio/APISentinel/CHANGELOG.md": "c5f320ac86cc5a153235ee84d737f1919d4106b18ab7595f2c0aff5a290403a7",
+        "portfolio/APISentinel/CONTRIBUTING.md": "d41b7edbee0e5147c59537702acf2115687c333adb53c57cdb0bbaf4a725e4ac",
+        "portfolio/APISentinel/Dockerfile": "6995ffd5881a5ccf2db85997e42c092e353e5575a14a53c7e6462e36fa2d735d",
+        "portfolio/APISentinel/GITHUB_METADATA.md": "4f6ec84220445ce35cfa979d82baac94ce822b07cc1bfd540e4a0ebfb74b127f",
+        "portfolio/APISentinel/LICENSE": "9cfa406d103afff6b45bcf7d740e4fc2f13b34843c06c1b2c575b4b45a73fc77",
+        "portfolio/APISentinel/Makefile": "917916a357c560ff4404f65706a4f52bac4794b23af76644e03426250e1810bd",
+        "portfolio/APISentinel/README.md": "5af4a74edd747b775314bf2390180c11a0d5aa7fb077dfb3dfb44662205bcecc",
+        "portfolio/APISentinel/SECURITY.md": "af7eb9c492662fa7cb99f97b88185f0753dd8e248466f67de95cd7a601ae65e9",
+        "portfolio/APISentinel/cmd/demo/main.go": "7a53e41ce301fd1b6a1d735bf70171f3c83a7cb3ffe7072489fad3fadb938915",
+        "portfolio/APISentinel/cmd/server/main.go": "85fcdd6e3f1eb3ca0e0bb4f1e1ee6ca659f5d66b6c22cc7805ae3a965b8c7e2a",
+        "portfolio/APISentinel/gateway/breaker.go": "5a4c4182b02f6a2c1f73b85f18cc37ad671e34167372b27c06a4b256c1673b3c",
+        "portfolio/APISentinel/gateway/gateway_test.go": "f020d07b766cb93e4504329dc1a1f33774d34ffd319076ce230ff26e223dddfa",
+        "portfolio/APISentinel/gateway/handler.go": "48b9429efdbfdd4e6242725ff88834fad4b743b06572a8ede08acb9cc9dccaba",
+        "portfolio/APISentinel/gateway/limiter.go": "773ca983801024ba0e6ea20bdcafdb9d17d6c6ab6904219f18a175de15ab0c2f",
+        "portfolio/APISentinel/go.mod": "74bb450a1ac8ab4230a58fcfa2d0f336f60bab24319b07a6fc8dbef7c1f6beca"
+      },
+      "publication_commit": null
     },
     {
       "name": "SearchGrid",
@@ -342,3 +376,4 @@
     }
   ]
 }
+
