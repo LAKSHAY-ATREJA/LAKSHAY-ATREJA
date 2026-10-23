@@ -1,0 +1,35 @@
+name: SearchGrid CI
+
+on:
+  push:
+    paths:
+      - "portfolio/SearchGrid/**"
+      - ".github/workflows/searchgrid.yml"
+  pull_request:
+    paths:
+      - "portfolio/SearchGrid/**"
+      - ".github/workflows/searchgrid.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    defaults:
+      run:
+        working-directory: portfolio/SearchGrid
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: uv sync --frozen --extra dev
+      - run: uv run ruff format --check .
+      - run: uv run ruff check .
+      - run: uv run pytest -q
+      - run: uv build
+      - run: uv run python demo.py

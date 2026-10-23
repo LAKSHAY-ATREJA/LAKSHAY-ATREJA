@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "LAKSHAY-ATREJA",
-  "updated_on": "2026-10-22",
+  "updated_on": "2026-10-23",
   "source_bundle_library_id": "libfile_341919f3e3188191bc509b6e979ef012",
   "queue": [
     {
@@ -369,8 +369,49 @@
     },
     {
       "name": "SearchGrid",
-      "status": "pending",
-      "path": "portfolio/SearchGrid"
+      "status": "published",
+      "path": "portfolio/SearchGrid",
+      "published_on": "2026-10-23",
+      "destination": "project folder in LAKSHAY-ATREJA/LAKSHAY-ATREJA",
+      "local_checks": {
+        "test_cases": 10,
+        "pytest": "passed on Python 3.12",
+        "ruff_check": "passed",
+        "ruff_format": "passed",
+        "compileall": "passed",
+        "package_build": "source distribution and wheel passed",
+        "http_demo": "passed: health, hybrid rank evidence, and invalid-query rejection",
+        "postgres_and_docker": "not executed; SQL assets were statically tested"
+      },
+      "hosted_ci": {
+        "status": "pending",
+        "checked_on": "2026-10-23"
+      },
+      "file_sha256": {
+        "portfolio/SearchGrid/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
+        "portfolio/SearchGrid/.gitignore": "46344db5799b53d12e8853be96c6ede97cea02459544cb91eb71f62647170832",
+        "portfolio/SearchGrid/CHANGELOG.md": "e650106d3068273a4ff5ba813ad47228ea6b131602396732e14829d592bee4ea",
+        "portfolio/SearchGrid/CONTRIBUTING.md": "d41b7edbee0e5147c59537702acf2115687c333adb53c57cdb0bbaf4a725e4ac",
+        "portfolio/SearchGrid/Dockerfile": "6fca889dc3804fdaf1b8db83db272a12e9262c3ae651be10ae8d21a51a3a36b7",
+        "portfolio/SearchGrid/GITHUB_METADATA.md": "218e37f76bc257a66e162b6f25ad2c2774ce56cb10eb0e6248e87cabd8b70665",
+        "portfolio/SearchGrid/LICENSE": "9cfa406d103afff6b45bcf7d740e4fc2f13b34843c06c1b2c575b4b45a73fc77",
+        "portfolio/SearchGrid/Makefile": "93dd760f4f83cecf46e74b756ecb7e7c3123bf615bb678b1353499398a171e1c",
+        "portfolio/SearchGrid/README.md": "d80c7092f69723783c07c588862078a7f7326e2ef384b722ef4b6bb75e52021f",
+        "portfolio/SearchGrid/SECURITY.md": "af7eb9c492662fa7cb99f97b88185f0753dd8e248466f67de95cd7a601ae65e9",
+        "portfolio/SearchGrid/db/hybrid_search.sql": "dfa65acfa8121699b239fad4dbbd67cff25d524165497d2861907fd6eed9a702",
+        "portfolio/SearchGrid/db/schema.sql": "ac951d217a7ba7ae67dfac7a8b22422939a02f7ac9102d1d9714c4cc070b0832",
+        "portfolio/SearchGrid/demo.py": "a99a677de0d8ed485727ac8223208081f3a874b59cd56407c837a0e54f7f1c7e",
+        "portfolio/SearchGrid/docker-compose.yml": "1a0e0c86889808d367f7c888ed01a6c800991d8d2c4a9ce8e52620aec4b7f72e",
+        "portfolio/SearchGrid/pyproject.toml": "cf2d0fb67410755ddbf845effe7987623e0e144ee706844364694064c53f2f44",
+        "portfolio/SearchGrid/searchgrid/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "portfolio/SearchGrid/searchgrid/api.py": "0cce496885ec1edc54433a006b2bb1ad1f3432dade4b67391607a3c87cc6aa85",
+        "portfolio/SearchGrid/searchgrid/search.py": "c4c253730f7d641e268206a6500fa40128350e7614617e26c04aea0b26eebedf",
+        "portfolio/SearchGrid/tests/test_api.py": "22a4d3cce911305bf4562e4f3c59628542faba1d556d581927cec93118f11d94",
+        "portfolio/SearchGrid/tests/test_search.py": "c8771495a660e4ba9aecb7c06055d8a302ffc11d6a3167086995a222edcd8e7b",
+        "portfolio/SearchGrid/tests/test_sql.py": "165db19abe75aecd0862b50bb629d9fa0824c6417378751a18f4d6acfd9166c3",
+        "portfolio/SearchGrid/uv.lock": "31633fcc1c56415509fe7f9451d8f623d25e8350c74e38e55469bae0749e0e44"
+      },
+      "publication_commit": null
     },
     {
       "name": "SLOForge",

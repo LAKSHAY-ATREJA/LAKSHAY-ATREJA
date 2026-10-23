@@ -30,6 +30,7 @@ For **backend/API applications**, lead with 1–2 and 4–5. For **cloud/platfor
 | [Flagship Feature Flags](Flagship-Feature-Flags) | Concurrency-safe Go feature-flag service with stable percentage rollouts, attribute targeting, and an immediate kill switch. |
 | [LedgerFlow](LedgerFlow) | Python/FastAPI double-entry ledger reference with idempotent transfers, an inspectable journal, a runnable HTTP demo, and automated tests; in-memory educational scope. |
 | [RAGGuard](RAGGuard-AI-Platform) | Offline-first FastAPI RAG gateway reference with hybrid retrieval, heuristic input checks, citation evaluation, and a deterministic local demo. |
+| [SearchGrid](SearchGrid) | Python hybrid-retrieval reference combining BM25-style ranking, deterministic hash vectors, inspectable RRF evidence, and a real HTTP demo. |
 | [SyncSpace](SyncSpace) | TypeScript/React task-board reference using WebSockets and versioned edits to reject stale writes; no authentication or persistent storage. |
 | [Online Retail Analytics](https://github.com/LAKSHAY-ATREJA/online-retail-analytics) | End-to-end analysis of roughly one million transactions, covering cleaning, SQL, revenue exploration, RFM segmentation, and a Streamlit dashboard. |
 | [StockSight](https://github.com/LAKSHAY-ATREJA/StockSight-LSTM-Stock-Price-Predictor) | LSTM forecasting app with a REST API and dashboard; forecasts are experimental and not investment advice. |
@@ -63,7 +64,7 @@ Your CV also lists **AgeOverflow Cloud Microservices** and the **Gaussian Splatt
 | [StreamForge](StreamForge) | Complete Python event-processing reference released 20 October 2026; 5 tests, package build and real HTTP demo passed locally |
 | [PlatformKit](PlatformKit) | Complete Terraform/Kubernetes/Helm reference released 21 October 2026; tests, HTTP demo, Helm checks and Terraform formatting passed locally |
 | [APISentinel](APISentinel) | Complete Go resilience gateway released 22 October 2026; race tests, vet, build and live HTTP demo passed locally |
-| SearchGrid | Queued for validation and release |
+| [SearchGrid](SearchGrid) | Complete Python hybrid-retrieval reference released 23 October 2026; 10 tests, package build and real HTTP demo passed locally |
 | SLOForge | Queued for validation and release |
 
 LedgerFlow is an in-memory educational reference. Its README explains the scope and provides both an automated demo and an interactive API. Docker configuration is supplied but was not executed during local validation. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37728175826) for the published implementation on Python 3.11 and 3.12.
@@ -83,5 +84,7 @@ PlatformKit is an infrastructure-reference project covering an AWS Terraform fou
 
 APISentinel is a standard-library Go resilience gateway for one upstream. Seven focused tests passed under the race detector, along with `go vet`, server compilation, a credential-free loopback HTTP demo and a compiled-binary HTTP check. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39763035922) on Go 1.23 and 1.24 with format, vet, race tests, build and the same HTTP demo. The verified behaviours cover health, path/query forwarding, correlation IDs, hop-by-hop header filtering, rate limiting, circuit opening and one half-open recovery probe. State is in memory and process-local; there is no authentication, TLS termination, trusted-proxy policy, distributed coordination, persistence or load testing. Container and hosted deployment execution are not claimed.
 
-The remaining entries are a release queue, not claims of completed publication. Existing partial folders remain visible until their complete replacements pass their release checks.
+SearchGrid is an in-memory hybrid-retrieval reference. Ten tests, Ruff checks, compilation, source and wheel builds, and a real loopback HTTP demo passed locally; the demo covered health, ranked retrieval with both signal ranks, and invalid-query rejection. Its four-document corpus is toy data and its vectors are deterministic token hashes, not learned embeddings. PostgreSQL/pgvector files are static deployment references and were not executed; the API is not wired to that database. Docker, authentication, persistence, load testing and hosted deployment are not claimed.
+
+The remaining entry is a release queue item, not a claim of completed publication. Existing partial folders remain visible until their complete replacements pass their release checks.
 
