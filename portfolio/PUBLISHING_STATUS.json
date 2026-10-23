@@ -384,8 +384,11 @@
         "postgres_and_docker": "not executed; SQL assets were statically tested"
       },
       "hosted_ci": {
-        "status": "pending",
-        "checked_on": "2026-10-23"
+        "status": "success",
+        "run_id": 39938693845,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39938693845",
+        "checked_on": "2026-10-23",
+        "checks": "Python 3.11 and 3.12 locked install, Ruff, 10 tests, source and wheel build, and credential-free HTTP demo"
       },
       "file_sha256": {
         "portfolio/SearchGrid/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
@@ -411,7 +414,7 @@
         "portfolio/SearchGrid/tests/test_sql.py": "165db19abe75aecd0862b50bb629d9fa0824c6417378751a18f4d6acfd9166c3",
         "portfolio/SearchGrid/uv.lock": "31633fcc1c56415509fe7f9451d8f623d25e8350c74e38e55469bae0749e0e44"
       },
-      "publication_commit": null
+      "publication_commit": "b5be6aeb2047f28efd54eda250094bab01fbe3fe"
     },
     {
       "name": "SLOForge",
