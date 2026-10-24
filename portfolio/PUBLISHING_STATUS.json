@@ -434,8 +434,11 @@
         "docker": "not executed"
       },
       "hosted_ci": {
-        "status": "pending",
-        "checked_on": "2026-10-24"
+        "status": "success",
+        "run_id": 40085947923,
+        "url": "https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/40085947923",
+        "checked_on": "2026-10-24",
+        "checks": "Python 3.11 and 3.12 locked install, Ruff, 14 tests, source and wheel build, and credential-free HTTP demo"
       },
       "file_sha256": {
         "portfolio/SLOForge/.dockerignore": "8cbd99e2aac1b053f8a4d6fa79bdcd47a1d6d083708ff79aa266de704d536fc2",
@@ -459,7 +462,7 @@
         "portfolio/SLOForge/tests/test_slo.py": "dad508979daad0754812201701597fa6f6f95dffec219cb09a538c26486e9d30",
         "portfolio/SLOForge/uv.lock": "cd46350bb70a6a4cdc67c5d1b35bb7f59198f98fbb9119bdcafeaaaf558aec75"
       },
-      "publication_commit": null
+      "publication_commit": "6878a8642abd3aa3c3131690e210a75e9dbcb581"
     }
   ]
 }
