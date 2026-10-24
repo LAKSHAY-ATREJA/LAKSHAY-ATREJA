@@ -31,6 +31,7 @@ For **backend/API applications**, lead with 1–2 and 4–5. For **cloud/platfor
 | [LedgerFlow](LedgerFlow) | Python/FastAPI double-entry ledger reference with idempotent transfers, an inspectable journal, a runnable HTTP demo, and automated tests; in-memory educational scope. |
 | [RAGGuard](RAGGuard-AI-Platform) | Offline-first FastAPI RAG gateway reference with hybrid retrieval, heuristic input checks, citation evaluation, and a deterministic local demo. |
 | [SearchGrid](SearchGrid) | Python hybrid-retrieval reference combining BM25-style ranking, deterministic hash vectors, inspectable RRF evidence, and a real HTTP demo. |
+| [SLOForge](SLOForge) | Python SRE reference for error budgets and paired-window burn-rate alerts, with inspectable evidence, Prometheus rules, and a real HTTP demo. |
 | [SyncSpace](SyncSpace) | TypeScript/React task-board reference using WebSockets and versioned edits to reject stale writes; no authentication or persistent storage. |
 | [Online Retail Analytics](https://github.com/LAKSHAY-ATREJA/online-retail-analytics) | End-to-end analysis of roughly one million transactions, covering cleaning, SQL, revenue exploration, RFM segmentation, and a Streamlit dashboard. |
 | [StockSight](https://github.com/LAKSHAY-ATREJA/StockSight-LSTM-Stock-Price-Predictor) | LSTM forecasting app with a REST API and dashboard; forecasts are experimental and not investment advice. |
@@ -65,7 +66,7 @@ Your CV also lists **AgeOverflow Cloud Microservices** and the **Gaussian Splatt
 | [PlatformKit](PlatformKit) | Complete Terraform/Kubernetes/Helm reference released 21 October 2026; tests, HTTP demo, Helm checks and Terraform formatting passed locally |
 | [APISentinel](APISentinel) | Complete Go resilience gateway released 22 October 2026; race tests, vet, build and live HTTP demo passed locally |
 | [SearchGrid](SearchGrid) | Complete Python hybrid-retrieval reference released 23 October 2026; 10 tests, package build and real HTTP demo passed locally |
-| SLOForge | Queued for validation and release |
+| [SLOForge](SLOForge) | Complete Python SRE reference released 24 October 2026; 14 tests, package build and real HTTP demo passed locally |
 
 LedgerFlow is an in-memory educational reference. Its README explains the scope and provides both an automated demo and an interactive API. Docker configuration is supplied but was not executed during local validation. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/37728175826) for the published implementation on Python 3.11 and 3.12.
 
@@ -86,5 +87,7 @@ APISentinel is a standard-library Go resilience gateway for one upstream. Seven 
 
 SearchGrid is an in-memory hybrid-retrieval reference. Ten tests, Ruff checks, compilation, source and wheel builds, and a real loopback HTTP demo passed locally; the demo covered health, ranked retrieval with both signal ranks, and invalid-query rejection. [GitHub Actions passed](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/actions/runs/39938693845) on Python 3.11 and 3.12 with locked installs, Ruff, 10 tests, package builds and the same HTTP demo. Its four-document corpus is toy data and its vectors are deterministic token hashes, not learned embeddings. PostgreSQL/pgvector files are static deployment references and were not executed; the API is not wired to that database. Docker, authentication, persistence, load testing and hosted deployment are not claimed.
 
-The remaining entry is a release queue item, not a claim of completed publication. Existing partial folders remain visible until their complete replacements pass their release checks.
+SLOForge is a stateless error-budget and multi-window burn-rate reference. Fourteen tests, Ruff checks, compilation, source and wheel builds, and a real loopback HTTP demo passed locally. The demo covered health, a fast-burn page with per-window evidence and invalid-count rejection. Prometheus YAML structure and expressions were contract-tested, but `promtool`, a running Prometheus server and real metrics were not exercised. The API trusts caller-supplied aggregate windows and has no metrics ingestion, persistence, authentication, alert delivery or incident lifecycle. Docker, load testing and hosted deployment are not claimed.
+
+All ten planned portfolio projects have now completed their individual release gates. Local verification and hosted CI evidence are recorded separately for each release.
 

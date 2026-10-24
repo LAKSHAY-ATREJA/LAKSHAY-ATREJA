@@ -1,0 +1,37 @@
+groups:
+  - name: api-slo
+    rules:
+      - record: slo:http_requests:error_ratio_rate5m
+        expr: >-
+          sum(rate(http_requests_total{job="api",status=~"5.."}[5m]))
+          / clamp_min(sum(rate(http_requests_total{job="api"}[5m])), 1)
+      - record: slo:http_requests:error_ratio_rate30m
+        expr: >-
+          sum(rate(http_requests_total{job="api",status=~"5.."}[30m]))
+          / clamp_min(sum(rate(http_requests_total{job="api"}[30m])), 1)
+      - record: slo:http_requests:error_ratio_rate1h
+        expr: >-
+          sum(rate(http_requests_total{job="api",status=~"5.."}[1h]))
+          / clamp_min(sum(rate(http_requests_total{job="api"}[1h])), 1)
+      - record: slo:http_requests:error_ratio_rate6h
+        expr: >-
+          sum(rate(http_requests_total{job="api",status=~"5.."}[6h]))
+          / clamp_min(sum(rate(http_requests_total{job="api"}[6h])), 1)
+      - alert: SLOFastBurn
+        expr: >-
+          (slo:http_requests:error_ratio_rate5m > (14.4 * 0.001))
+          and (slo:http_requests:error_ratio_rate1h > (14.4 * 0.001))
+        for: 2m
+        labels:
+          severity: page
+        annotations:
+          summary: API is consuming its 99.9% SLO error budget at a fast rate
+      - alert: SLOSlowBurn
+        expr: >-
+          (slo:http_requests:error_ratio_rate30m > (6 * 0.001))
+          and (slo:http_requests:error_ratio_rate6h > (6 * 0.001))
+        for: 15m
+        labels:
+          severity: page
+        annotations:
+          summary: API is consuming its 99.9% SLO error budget at a sustained rate
