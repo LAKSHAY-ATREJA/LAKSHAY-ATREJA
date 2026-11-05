@@ -1,6 +1,6 @@
 # NIFTY 50 | Market Intelligence
 
-**LICE DEMO : https://gpm7jvk6pbxncjfun9my9r.streamlit.app/**
+**LIVE DEMO : https://gpm7jvk6pbxncjfun9my9r.streamlit.app/**
 
 A market research dashboard developed from my original Python/Streamlit Nifty 50 screener. It retains the original features—**MACD Buy/Sell indicator states**, **distance to one-year highs**, and **NSE RSS corporate announcements**—and presents them as an interactive analyst workspace with candlestick and volume charts, RSI, market breadth, signal filters, watchlist ranking, downloadable reports and an opt-in Yahoo Finance data source.
 
