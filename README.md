@@ -31,6 +31,11 @@ Order is tuned for general software, backend, and cloud roles. For AI, data, or 
 - **[RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit)** — Dependency-light Python library and CLI for retrieval metrics including Precision@k, Recall@k, MRR, MAP, and nDCG, with retriever comparison and JSON/CSV export.
 - **[RAGGuard](portfolio/RAGGuard-AI-Platform)** — Offline-first RAG gateway reference demonstrating hybrid retrieval, heuristic input checks, cited evidence, and evaluation without requiring an API key for its local demo.
 
+### Applied AI beyond RAG (new working prototypes)
+
+- **[SignalScope — Operations Anomaly Monitor](projects/SignalScope)** — Browser-based operational anomaly detection with causal rolling median/MAD scoring, incident flags, a seven-day statistical forecast, CSV ingestion/export, and automated tests. Synthetic data in demo; no production deployment claimed.
+- **[VisionDelta — Visual Inspection Lab](projects/VisionDelta)** — Browser-based computer-vision inspection comparing aligned images, segmenting changed regions, drawing annotations, and exporting JSON/PNG reports. Uses classical vision rules rather than a trained detector.
+
 ### Computer vision & research
 
 - **[Fluid Dynamics Video Analysis](https://github.com/LAKSHAY-ATREJA/Fluid-Dynamics-Video-Analysis-Application)** — OpenCV/PyQt5 desktop application estimating calibrated water velocities from video with Farnebäck optical flow and shape-from-shading.

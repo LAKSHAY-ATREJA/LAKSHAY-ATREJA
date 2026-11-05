@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {median,mad,parseCSV,analyzeSeries,forecastSeries,demoData,asCSV} from './logic.mjs';
+assert.equal(median([8,1,7,2]),4.5);assert.equal(mad([10,10,11,9,10]),0);
+assert.equal(parseCSV('date,demand\n2026-01-01,5\n2026-01-02,6').length,2);
+assert.throws(()=>parseCSV('date,value\n2026-01-01,-1'));
+assert.throws(()=>parseCSV('date,value\n2026-01-01,4\n2026-01-03,3'),/missing dates/);
+const rows=demoData(), out=analyzeSeries(rows);
+assert.equal(out.length,84);assert.equal(out[0].flag,false);
+assert.equal(out[48].flag,true);assert.equal(out[62].flag,true);
+assert.equal(forecastSeries(rows,7).length,7);assert.ok(forecastSeries(rows,7).every(x=>x.forecast>=0));
+assert.ok(asCSV(out).includes('robust_score'));
+console.log('SignalScope: 11 assertions passed');

@@ -1,0 +1,22 @@
+name: Non-RAG portfolio prototypes
+on:
+  push:
+    paths:
+      - 'projects/SignalScope/**'
+      - 'projects/VisionDelta/**'
+      - '.github/workflows/portfolio-prototypes.yml'
+  pull_request:
+    paths:
+      - 'projects/SignalScope/**'
+      - 'projects/VisionDelta/**'
+      - '.github/workflows/portfolio-prototypes.yml'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node projects/SignalScope/tests.mjs
+      - run: node projects/VisionDelta/tests.mjs
