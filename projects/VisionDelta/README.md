@@ -2,7 +2,8 @@
 
 A visual quality engineering prototype that takes two inspection images, estimates geometric alignment, measures structural and colour changes, isolates candidate defect regions and exports reviewable evidence. The Streamlit application opens directly into a synthetic industrial-inspection example so reviewers can inspect the full workflow without uploading anything or supplying an API key.
 ---
-LIVE DEMO : https://rp9kqkgwgznyrjumr9vm9a.streamlit.app/
+
+**[▶ Explore the hosted VisionDelta demo](https://rp9kqkgwgznyrjumr9vm9a.streamlit.app/)**
 
 ## What the interactive demo shows
 
@@ -25,7 +26,7 @@ Streamlit Community Cloud settings:
 - Branch: `main`
 - Main file path: `projects/VisionDelta/app.py`
 
-A public demo link will be placed here after the actual hosted application is confirmed to work.
+Use the hosted demo link above to explore the built-in synthetic inspection example, or run the app locally using the setup instructions below.
 
 Local setup from repository root:
 
