@@ -12,22 +12,9 @@ I build backend, cloud, and applied AI systems. My strongest work focuses on sec
 **AI / ML:** RAG, LangChain, FAISS, TensorFlow, scikit-learn, OpenCV  
 **Engineering:** Testing, API security, observability, retrieval evaluation, asynchronous services
 
-## Streamlit application portfolio
-
-These projects include runnable Streamlit interfaces. Each app can be deployed from its GitHub source using [Streamlit Community Cloud](https://share.streamlit.io/). Do not confuse a source link with an already hosted live demo.
-
-| Project | Focus | Streamlit application |
-|---|---|---|
-| **SignalScope** | Explainable operational anomaly detection, incident review and seven-day statistical forecast | [Source and setup](projects/SignalScope/README.md) / [App code](projects/SignalScope/app.py) |
-| **VisionDelta** | Classical computer-vision image comparison, connected change regions, annotated exports | [Source and setup](projects/VisionDelta/README.md) / [App code](projects/VisionDelta/app.py) |
-| **RAG Document Q&A** | PDF semantic retrieval, document search with citations, optional LLM synthesis | [Application repository](https://github.com/LAKSHAY-ATREJA/Rag-pipeline-for-Document-search-) |
-| **Multi-Agent Research System** | Sequential agent planning, analysis, writing and review | [Repository and existing Streamlit link](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system) |
-
-**Deployment:** choose branch `main` and the app file path from each project's README. Public demos should be linked here only after the hosted URL has been verified.
-
 ## Featured Projects
 
-Order is tuned for general software, backend, and cloud roles. For AI, data, or computer-vision applications, move the relevant specialist projects higher; the [full portfolio index](portfolio/README.md) groups them by level and role.
+Selected work across backend engineering, cloud systems, applied AI and computer vision. Explore the [full portfolio index](portfolio/README.md) for additional projects.
 
 ### Backend & platform
 
@@ -44,10 +31,10 @@ Order is tuned for general software, backend, and cloud roles. For AI, data, or 
 - **[RAG Eval Kit](https://github.com/LAKSHAY-ATREJA/RAG-Eval-Kit)** — Dependency-light Python library and CLI for retrieval metrics including Precision@k, Recall@k, MRR, MAP, and nDCG, with retriever comparison and JSON/CSV export.
 - **[RAGGuard](portfolio/RAGGuard-AI-Platform)** — Offline-first RAG gateway reference demonstrating hybrid retrieval, heuristic input checks, cited evidence, and evaluation without requiring an API key for its local demo.
 
-### Applied AI beyond RAG (new working prototypes)
+### Applied analytics & computer vision
 
-- **[SignalScope — Operations Anomaly Monitor](projects/SignalScope)** — Browser-based operational anomaly detection with causal rolling median/MAD scoring, incident flags, a seven-day statistical forecast, CSV ingestion/export, and automated tests. Synthetic data in demo; no production deployment claimed.
-- **[VisionDelta — Visual Inspection Lab](projects/VisionDelta)** — Browser-based computer-vision inspection comparing aligned images, segmenting changed regions, drawing annotations, and exporting JSON/PNG reports. Uses classical vision rules rather than a trained detector.
+- **[SignalScope — Operations Anomaly Monitor](projects/SignalScope)** — Interactive analytics application for time-series anomaly detection, incident review, forecasting, and CSV reporting.
+- **[VisionDelta — Visual Inspection Lab](projects/VisionDelta)** — Visual inspection application for image comparison, change-region identification, annotations, and downloadable reports.
 
 ### Computer vision & research
 
