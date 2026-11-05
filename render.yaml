@@ -1,0 +1,17 @@
+# Render Blueprint for the independent browser demos.
+# These static sites require no API keys, server, database, or user data uploads.
+# The services are created only after this Blueprint is connected in Render.
+services:
+  - type: web
+    runtime: static
+    name: lakshay-signalscope
+    buildCommand: echo "Publishing SignalScope static demo"
+    staticPublishPath: ./projects/SignalScope
+    autoDeployTrigger: commit
+
+  - type: web
+    runtime: static
+    name: lakshay-visiondelta
+    buildCommand: echo "Publishing VisionDelta static demo"
+    staticPublishPath: ./projects/VisionDelta
+    autoDeployTrigger: commit
