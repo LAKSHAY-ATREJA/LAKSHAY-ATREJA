@@ -2,7 +2,8 @@
 
 An evidence-focused incident investigation application for multi-service operational telemetry. Import hourly signals from CSV or explore a reproducible synthetic four-service environment. The workbench combines causal anomaly scoring, correlated incident triage, service impact analysis, a historical-pattern forecast with empirical uncertainty bands, and exportable investigation evidence.
 ---
-LIVE DEMO : https://signalscope-acpquoscfzxf7q2reymsxm.streamlit.app/
+
+**[▶ Explore the hosted SignalScope dashboard](https://signalscope-acpquoscfzxf7q2reymsxm.streamlit.app/)**
 
 ## Engineering design
 
@@ -16,7 +17,7 @@ LIVE DEMO : https://signalscope-acpquoscfzxf7q2reymsxm.streamlit.app/
 
 ## Run the application
 
-In Streamlit Community Cloud, choose repository `LAKSHAY-ATREJA/LAKSHAY-ATREJA`, branch `main`, main file `projects/SignalScope/app.py`. Public live-demo URL will be linked here only after deployment has been verified.
+Try the hosted dashboard linked above, or deploy your own instance on Streamlit Community Cloud with repository `LAKSHAY-ATREJA/LAKSHAY-ATREJA`, branch `main`, and main file `projects/SignalScope/app.py`. The built-in example uses synthetic operational data.
 
 Locally, from repository root:
 
