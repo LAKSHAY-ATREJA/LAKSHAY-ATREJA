@@ -12,6 +12,19 @@ I build backend, cloud, and applied AI systems. My strongest work focuses on sec
 **AI / ML:** RAG, LangChain, FAISS, TensorFlow, scikit-learn, OpenCV  
 **Engineering:** Testing, API security, observability, retrieval evaluation, asynchronous services
 
+## Streamlit application portfolio
+
+These projects include runnable Streamlit interfaces. Each app can be deployed from its GitHub source using [Streamlit Community Cloud](https://share.streamlit.io/). Do not confuse a source link with an already hosted live demo.
+
+| Project | Focus | Streamlit application |
+|---|---|---|
+| **SignalScope** | Explainable operational anomaly detection, incident review and seven-day statistical forecast | [Source and setup](projects/SignalScope/README.md) / [App code](projects/SignalScope/app.py) |
+| **VisionDelta** | Classical computer-vision image comparison, connected change regions, annotated exports | [Source and setup](projects/VisionDelta/README.md) / [App code](projects/VisionDelta/app.py) |
+| **RAG Document Q&A** | PDF semantic retrieval, document search with citations, optional LLM synthesis | [Application repository](https://github.com/LAKSHAY-ATREJA/Rag-pipeline-for-Document-search-) |
+| **Multi-Agent Research System** | Sequential agent planning, analysis, writing and review | [Repository and existing Streamlit link](https://github.com/LAKSHAY-ATREJA/multi-agent-research-system) |
+
+**Deployment:** choose branch `main` and the app file path from each project's README. Public demos should be linked here only after the hosted URL has been verified.
+
 ## Featured Projects
 
 Order is tuned for general software, backend, and cloud roles. For AI, data, or computer-vision applications, move the relevant specialist projects higher; the [full portfolio index](portfolio/README.md) groups them by level and role.
