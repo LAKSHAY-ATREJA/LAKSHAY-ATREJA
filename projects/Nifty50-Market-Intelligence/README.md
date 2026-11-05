@@ -1,10 +1,10 @@
 # NIFTY 50 | Market Intelligence
 
-**LIVE DEMO : https://gpm7jvk6pbxncjfun9my9r.streamlit.app/**
+**[▶ Explore the hosted NIFTY 50 dashboard](https://gpm7jvk6pbxncjfun9my9r.streamlit.app/)**
 
 A market research dashboard developed from my original Python/Streamlit Nifty 50 screener. It retains the original features—**MACD Buy/Sell indicator states**, **distance to one-year highs**, and **NSE RSS corporate announcements**—and presents them as an interactive analyst workspace with candlestick and volume charts, RSI, market breadth, signal filters, watchlist ranking, downloadable reports and an opt-in Yahoo Finance data source.
 
-**Live Demo:** A public `.streamlit.app` URL will be added here after the Streamlit deployment is created. The button above opens the **deployment platform**, not a running app. No public live-demo address has been verified yet.
+> **Demo tip:** The dashboard starts with clearly labelled synthetic example data so you can explore the interface without credentials. Select the Yahoo Finance source in the sidebar to request historical market data. Hosted availability depends on Streamlit Community Cloud.
 
 ## Dashboard features
 
@@ -39,7 +39,7 @@ Or enter these exact values:
 | Main file path | `projects/Nifty50-Market-Intelligence/app.py` |
 | Optional app subdomain | `nifty50-market-intelligence` if available |
 
-Streamlit will read dependencies from `projects/Nifty50-Market-Intelligence/requirements.txt`. Copy the **actual** generated `.streamlit.app` URL into this README after successful deployment.
+Streamlit will read dependencies from `projects/Nifty50-Market-Intelligence/requirements.txt`. If you deploy your own copy, use the separate `.streamlit.app` URL supplied by Streamlit.
 
 ## Run locally
 
