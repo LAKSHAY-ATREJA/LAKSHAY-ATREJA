@@ -1,31 +1,37 @@
-# VisionDelta — Visual Inspection Lab
+# VisionDelta | Visual Change Inspection
 
-A fully functional, **non-RAG** browser-based computer vision tool for explainable image comparison and defect-region inspection.
+Interactive **non-RAG**, **non-LLM** classical computer-vision prototype. Compare two images, review changed regions, inspect pixel-level difference intensity and export an annotated PNG and structured JSON report.
 
-## What works
-- Upload reference and candidate images; or open a reproducible synthetic demonstration.
-- Scale images into a shared 360x360 inspection canvas.
-- Pixel-level RGB difference thresholding with configurable sensitivity.
-- 4-connected component segmentation with minimum-area filtering.
-- Mark each region on an annotated inspection view.
-- Inspect changed pixel percentage, average RGB difference, component bounding boxes.
-- Export annotated PNG and a machine-readable JSON inspection report.
-- Works entirely in the user's browser: no external model, API key, server, or uploads.
+## Streamlit demo
 
-**Method honesty:** This is classical computer vision (difference thresholding + connected components), *not* a trained defect classification model or production-certified quality system. It requires aligned images; lighting, scale, framing, or camera changes can create false positives.
+**Deploy from GitHub:** In [Streamlit Community Cloud](https://share.streamlit.io/) select repository `LAKSHAY-ATREJA/LAKSHAY-ATREJA`, branch `main`, main file `projects/VisionDelta/app.py`. Dependencies are in `projects/VisionDelta/requirements.txt`.
 
-## Run
+No live-demo URL is claimed until an actual deployment is created and opened successfully.
+
+## Features
+- Interactive two-image upload or built-in synthetic demo
+- Both images fitted to a shared 360 × 300 canvas for comparison
+- Pixel-level mean RGB differences and adjustable threshold
+- Four-connected component segmentation, configurable minimum region size
+- Image overlays with marked change regions, difference heatmap
+- Downloadable PNG annotations and JSON report
+
+## Local run
+
 ```bash
-python -m http.server 8080
-# open http://localhost:8080/projects/VisionDelta/ from repository root
-```
-Or, from this folder: `python -m http.server 8080`, then open `http://localhost:8080`.
-
-## Test
-Node.js >=18 with no dependencies:
-```bash
-node projects/VisionDelta/tests.mjs
+pip install -r projects/VisionDelta/requirements.txt
+streamlit run projects/VisionDelta/app.py
 ```
 
-## Potential next steps
-Automated image registration, illumination invariance, segmentation model backends, offline batch report generation, and dataset-based performance validation.
+## Tests
+
+```bash
+cd projects/VisionDelta
+python -m unittest test_logic.py
+```
+
+## Method / limitations
+
+This is a deterministic classical vision algorithm, **not** a trained neural net, defect detector or production inspection system. Misaligned images or differences in perspective, light, camera or resize crop can create false positives. Do not upload confidential images into externally hosted demos.
+
+An earlier JavaScript/browser prototype (`index.html`, `logic.mjs`, `tests.mjs`) is retained. The Streamlit implementation is independent and can run directly from `app.py`.

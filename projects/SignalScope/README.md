@@ -1,39 +1,36 @@
-# SignalScope — Operations Anomaly Monitor
+# SignalScope | Operations Anomaly Monitoring
 
-A complete, browser-based, **non-RAG** applied analytics tool for operational time series. Upload daily CSV data, detect unexpected volume spikes/drops, review incidents, forecast next-week demand, and download a review report.
+A Streamlit-ready, **non-RAG** applied analytics dashboard. Bring your own `date,value` CSV or use a synthetic demo. Explore unusual demand or traffic events, review explainable rolling-median/MAD scores, see a transparent seven-day statistical forecast, and download results.
 
-## What works
-- CSV ingestion and validation (`date,value` with daily contiguous dates; demand/volume/count also accepted)
-- Causal rolling-median/MAD anomaly detection with adjustable threshold/window
-- Incident review queue with explainable robust scores
-- Simple, interpretable seven-day trend/weekday projection
-- Interactive SVG chart; export analysis as CSV
-- Privacy by design: all processing stays in the browser; no API key or backend
-- Deterministic synthetic demo data to reproduce anomaly scenarios
+## Streamlit demo
 
-**Method honesty:** This is an explainable statistical prototype. It is **not** a trained neural-network model, a validated forecasting product or a real client deployment. Sample data and flags are illustrative.
+**Deploy from GitHub:** In [Streamlit Community Cloud](https://share.streamlit.io/) choose repository `LAKSHAY-ATREJA/LAKSHAY-ATREJA`, branch `main`, main file `projects/SignalScope/app.py`. The dependency file is `projects/SignalScope/requirements.txt`.
 
-## Run
+There is **no claimed live-demo URL until the deployment has actually been created and checked.**
+
+## Features
+- CSV validation and synthetic demonstration data with intentional anomaly events
+- Causal rolling median / median absolute deviation scoring, configurable rolling window and alert threshold
+- Review alerts with scores and directions
+- Weekday median + capped trend forecast over seven days
+- Interactive charts, downloads, no third-party API keys
+
+## Local run
+
 ```bash
-python -m http.server 8080
-# open http://localhost:8080/projects/SignalScope/ from repository root
+pip install -r projects/SignalScope/requirements.txt
+streamlit run projects/SignalScope/app.py
 ```
-Or, inside this folder: `python -m http.server 8080` then `http://localhost:8080`.
 
-## Test
-Node.js >=18; no dependencies:
+## Tests
+
 ```bash
-node projects/SignalScope/tests.mjs
+cd projects/SignalScope
+python -m unittest test_logic.py
 ```
 
-## CSV format
-```csv
-date,value
-2026-10-01,120
-2026-10-02,123
-2026-10-03,117
-```
-At least seven days are required before anomaly scores are generated; more is preferable.
+## Method and limits
 
-## Limitations and next steps
-Weekly seasonality is not explicitly removed from anomaly scoring; strong weekly patterns may create false positives. Forecasts use robust weekday offsets and a capped ordinary-least-squares trend; production use would require holdout validation, monitoring, and domain-specific thresholds.
+The app uses robust **statistics**, not a machine-learning model, and does not make guarantees about future demand. The demo data is synthetic, the forecast is illustrative, and gaps in user datasets are not imputed. Work is done in the app process; Streamlit may handle uploaded files on its hosting infrastructure, so do not upload confidential information.
+
+The folder also retains an earlier JavaScript/browser demo (`index.html`, `logic.mjs`, `tests.mjs`). The Python Streamlit implementation is independently runnable.
