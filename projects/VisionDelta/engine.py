@@ -166,7 +166,7 @@ def inspect_pair(before: Image.Image,after: Image.Image,sensitivity=.31,min_area
     mask=((evidence>=sensitivity)&roi).astype("uint8")*255
     mask=cv2.morphologyEx(mask,cv2.MORPH_OPEN,np.ones((3,3),dtype="uint8"))
     mask=cv2.morphologyEx(mask,cv2.MORPH_CLOSE,np.ones((5,5),dtype="uint8"))
-    count,labels,stats,_=cv2.connectedComponentsWithStats(mask,8)
+    count,labels,stats,_=cv2.connectedComponentsWithStats(mask,connectivity=8)
     final=np.zeros_like(mask)
     regions=[]
     for idx in range(1,count):
