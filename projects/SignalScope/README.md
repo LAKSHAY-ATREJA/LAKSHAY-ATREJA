@@ -1,6 +1,8 @@
 # SignalScope | Operations Intelligence Workbench
 
 An evidence-focused incident investigation application for multi-service operational telemetry. Import hourly signals from CSV or explore a reproducible synthetic four-service environment. The workbench combines causal anomaly scoring, correlated incident triage, service impact analysis, a historical-pattern forecast with empirical uncertainty bands, and exportable investigation evidence.
+---
+LIVE DEMO : https://signalscope-acpquoscfzxf7q2reymsxm.streamlit.app/
 
 ## Engineering design
 
