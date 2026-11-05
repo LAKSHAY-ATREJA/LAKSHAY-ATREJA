@@ -19,6 +19,7 @@ Selected work across backend engineering, cloud systems, applied AI and computer
 ### Financial analytics & market intelligence
 
 - **[StockSight — Stock Analysis & Forecasting](https://github.com/LAKSHAY-ATREJA/StockSight-LSTM-Stock-Price-Predictor)** — Interactive financial dashboard and REST API with technical indicators and seven-day forecasts; supports optional LSTM model training. **[Launch live demo](https://stocksight-lstm-stock-price-predictor.onrender.com)**.
+- **[Nifty 50 Market Intelligence](https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/tree/main/projects/Nifty50-Market-Intelligence)** — Interactive Streamlit market research dashboard with MACD and RSI screening, candlestick charts, 52-week-high analysis, and NSE corporate announcements; includes an instant simulated demo and optional live market data.
 - **[Real-Time News Sentiment Analyser](https://github.com/LAKSHAY-ATREJA/Real-Time-News-Sentiment-Analyser)** — Financial news headline analysis, sentiment scoring, keyword summaries, and visual trends.
 - **[Online Retail Analytics](https://github.com/LAKSHAY-ATREJA/online-retail-analytics)** — Sales analysis, SQL exploration, and RFM customer segmentation with a Streamlit dashboard.
 
