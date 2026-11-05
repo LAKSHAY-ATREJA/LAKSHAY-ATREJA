@@ -1,21 +1,79 @@
-# Nifty 50 Market Intelligence
+# NIFTY 50 | Market Intelligence
 
-An independent financial-data analytics project exploring equity screening and market signals across the Nifty 50 universe. The original Python/Streamlit prototype covers MACD-based trend signals, the distance between a stock's last traded price and its 52-week high, and listed-company announcements from an RSS feed.
+**[🚀 Deploy this interactive Streamlit dashboard](https://share.streamlit.io/)** · **[Open Streamlit application source](app.py)**
 
-## Project status
+A market research dashboard developed from my original Python/Streamlit Nifty 50 screener. It retains the original features—**MACD Buy/Sell indicator states**, **distance to one-year highs**, and **NSE RSS corporate announcements**—and presents them as an interactive analyst workspace with candlestick and volume charts, RSI, market breadth, signal filters, watchlist ranking, downloadable reports and an opt-in Yahoo Finance data source.
 
-**Research prototype under redevelopment.** The original scripts are being consolidated into a reproducible analytics pipeline and an interactive Streamlit dashboard. This folder is an initial project page; the new dashboard and public live demo are **not yet available**.
+**Live Demo:** A public `.streamlit.app` URL will be added here after the Streamlit deployment is created. The button above opens the **deployment platform**, not a running app. No public live-demo address has been verified yet.
 
-## Focus
+## Dashboard features
 
-- **Market screening:** compare historical trends across Nifty 50 constituents.
-- **MACD:** inspect 12-period and 26-period exponential moving averages and the 9-period signal line.
-- **52-week high analysis:** compare recent closing prices with the highest price over the previous year.
-- **Company announcements:** parse financial-market RSS headlines and provide links to source announcements.
-- **Visual analytics:** a dashboard is planned for market breadth, individual ticker studies, filters and charts.
+| Workspace | Features |
+| --- | --- |
+| **Market pulse** | Momentum scatterplot, signal breakdown, gainers/losers and summary KPIs |
+| **Momentum terminal** | Last-session MACD screeners, crossover indicators, 130-session OHLC candlesticks, moving averages, trading volume, MACD histogram and recent six-session history |
+| **52-week gap analysis** | Price-vs-high deviation rankings, rolling high/low information, volatility and CSV export |
+| **NSE announcements** | On-demand RSS reading, announcement search, source links and export without unattended PDF downloading |
+| **Data quality** | Observed sessions, source labeling, missing-ticker diagnostics and reproducible screener export |
 
-The legacy scripts use Python, pandas, yfinance, requests, Beautiful Soup and Streamlit. They require refactoring for resilient market data access and reproducible results before being presented as a finished application.
+### Instant demo versus live market data
 
-## Responsible use
+The app **opens immediately using clearly labelled synthetic price data**, generated deterministically for the original 50-ticker watchlist. This is intended to show the UI and test it without API credentials. It **does not represent real historical prices**.
 
-Experimental financial-data visualisation only, not trading advice or validated buy/sell predictions. Market data may be delayed and data feeds can change. No live trading, brokerage connection or performance guarantees are claimed.
+Select **Yahoo Finance · live prices** in the sidebar to request genuine historical price data. This external service can be delayed, unavailable, rate-limited or return incomplete ticker coverage. The dashboard displays failures; it never silently replaces missing live prices with generated ones. The 50-symbol watchlist comes from the original user-supplied project and is **not represented as the latest official index membership**.
+
+## Deploy on Streamlit Community Cloud
+
+1. Open **[Streamlit Community Cloud](https://share.streamlit.io/)** and sign in with GitHub.
+2. Choose **Create app → Yup, I have an app → Paste GitHub URL**.
+3. Paste the entrypoint link:
+
+   `https://github.com/LAKSHAY-ATREJA/LAKSHAY-ATREJA/blob/main/projects/Nifty50-Market-Intelligence/app.py`
+
+Or enter these exact values:
+
+| Field | Value |
+| --- | --- |
+| Repository | `LAKSHAY-ATREJA/LAKSHAY-ATREJA` |
+| Branch | `main` |
+| Main file path | `projects/Nifty50-Market-Intelligence/app.py` |
+| Optional app subdomain | `nifty50-market-intelligence` if available |
+
+Streamlit will read dependencies from `projects/Nifty50-Market-Intelligence/requirements.txt`. Copy the **actual** generated `.streamlit.app` URL into this README after successful deployment.
+
+## Run locally
+
+From the root of the profile repository:
+
+```bash
+python -m pip install -r projects/Nifty50-Market-Intelligence/requirements.txt
+streamlit run projects/Nifty50-Market-Intelligence/app.py
+```
+
+## Design and correctness notes
+
+- Original MACD: 12- and 26-session EMAs, with a 9-session signal EMA. Unlike the prototype, the app computes indicators on the *full historical series* before showing the latest six sessions.
+- RSI is calculated over 14 sessions.
+- The high-gap rank uses `(highest observed High over latest 252 sessions - latest Close) / highest High * 100` so a 10% gap means the last price is 10% below the trailing high. This is distinct from the original prototype's `(high - close) / close` ratio.
+- Original Buy/Sell labels are **indicator regimes** (MACD above/below its signal), **not** investment recommendations or tested trade strategies.
+- NSE announcements are requested only after pressing Load; external PDF links open at source instead of being automatically downloaded onto the app server.
+- All sample charts are synthetic; there is no broker integration, backtested investment alpha, trading automation or price prediction claim.
+
+## Project files
+
+- `app.py` — interactive Streamlit dashboard and Plotly visualisations
+- `engine.py` — validated OHLCV data, synthetic fixture and quantitative indicators
+- `data_sources.py` — isolated Yahoo Finance and NSE RSS loaders
+- `test_engine.py` — formula, history, reproducibility, RSS and validation regression tests
+- `requirements.txt` — Streamlit Community Cloud dependencies
+
+## Tests
+
+```bash
+cd projects/Nifty50-Market-Intelligence
+python -m unittest discover -p "test_*.py" -v
+```
+
+GitHub Actions also checks Python compilation, tests and the Streamlit initial render using a local, synthetic dataset.
+
+**Disclaimer:** Portfolio research and educational visualisation only. Not financial advice.

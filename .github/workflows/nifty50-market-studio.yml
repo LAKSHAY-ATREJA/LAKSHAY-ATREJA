@@ -1,0 +1,40 @@
+name: Nifty 50 market studio
+
+on:
+  push:
+    paths:
+      - 'projects/Nifty50-Market-Intelligence/**'
+      - '.github/workflows/nifty50-market-studio.yml'
+  pull_request:
+    paths:
+      - 'projects/Nifty50-Market-Intelligence/**'
+      - '.github/workflows/nifty50-market-studio.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Python dependencies
+        run: python -m pip install -r projects/Nifty50-Market-Intelligence/requirements.txt
+      - name: Compile application
+        run: python -m compileall -q projects/Nifty50-Market-Intelligence
+      - name: Test market analytics and feed parsing
+        run: python -m unittest discover -s projects/Nifty50-Market-Intelligence -p 'test_*.py' -v
+      - name: Streamlit default dashboard smoke test
+        run: |
+          python - <<'PY'
+          import os
+          import sys
+          from streamlit.testing.v1 import AppTest
+          location = os.path.abspath("projects/Nifty50-Market-Intelligence")
+          sys.path.insert(0, location)
+          app = AppTest.from_file(os.path.join(location,"app.py"),default_timeout=120).run()
+          if app.exception:
+              for exc in app.exception: print(exc.message)
+              raise RuntimeError("Streamlit first render failed")
+          print("Market dashboard opened with synthetic demo data")
+          PY
